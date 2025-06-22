@@ -1,5 +1,5 @@
 {
-  "apiVersion": "dashboard.grafana.app/v1beta1",
+  "apiVersion": "dashboard.grafana.app/v0alpha1",
   "kind": "Dashboard",
   "metadata": {
     "name": "41URQF7mz"
@@ -30,6 +30,7 @@
     "description": "Updated to Zabbix 7 and Grafana 11",
     "editable": true,
     "fiscalYearStartMonth": 0,
+    "gnetId": 5363,
     "graphTooltip": 1,
     "links": [],
     "liveNow": true,
@@ -74,7 +75,8 @@
               "mode": "absolute",
               "steps": [
                 {
-                  "color": "green"
+                  "color": "green",
+                  "value": null
                 }
               ]
             },
@@ -107,7 +109,7 @@
           "textMode": "value",
           "wideLayout": true
         },
-        "pluginVersion": "12.0.2",
+        "pluginVersion": "11.5.2",
         "targets": [
           {
             "application": {
@@ -195,7 +197,8 @@
               "mode": "absolute",
               "steps": [
                 {
-                  "color": "green"
+                  "color": "green",
+                  "value": null
                 }
               ]
             },
@@ -229,7 +232,7 @@
           "textMode": "value",
           "wideLayout": true
         },
-        "pluginVersion": "12.0.2",
+        "pluginVersion": "11.5.2",
         "targets": [
           {
             "application": {
@@ -308,7 +311,8 @@
               "mode": "absolute",
               "steps": [
                 {
-                  "color": "green"
+                  "color": "green",
+                  "value": null
                 }
               ]
             }
@@ -340,7 +344,7 @@
           "textMode": "value",
           "wideLayout": true
         },
-        "pluginVersion": "12.0.2",
+        "pluginVersion": "11.5.2",
         "targets": [
           {
             "application": {
@@ -432,7 +436,8 @@
               "mode": "absolute",
               "steps": [
                 {
-                  "color": "red"
+                  "color": "red",
+                  "value": null
                 },
                 {
                   "color": "green",
@@ -471,7 +476,7 @@
           "textMode": "value",
           "wideLayout": true
         },
-        "pluginVersion": "12.0.2",
+        "pluginVersion": "11.5.2",
         "targets": [
           {
             "application": {
@@ -530,7 +535,6 @@
           }
         ],
         "timeFrom": "5m",
-        "title": "",
         "type": "stat"
       },
       {
@@ -558,7 +562,8 @@
               "mode": "absolute",
               "steps": [
                 {
-                  "color": "green"
+                  "color": "green",
+                  "value": null
                 }
               ]
             }
@@ -591,7 +596,7 @@
           "textMode": "value",
           "wideLayout": true
         },
-        "pluginVersion": "12.0.2",
+        "pluginVersion": "11.5.2",
         "targets": [
           {
             "application": {
@@ -602,7 +607,6 @@
               "type": "alexanderzobnin-zabbix-datasource",
               "uid": "eepnfj3d6hrlsb"
             },
-            "evaltype": "0",
             "functions": [],
             "group": {
               "filter": "$Group"
@@ -652,7 +656,6 @@
           }
         ],
         "timeFrom": "10y",
-        "title": "",
         "type": "stat"
       },
       {
@@ -668,7 +671,8 @@
               "mode": "absolute",
               "steps": [
                 {
-                  "color": "green"
+                  "color": "green",
+                  "value": null
                 },
                 {
                   "color": "yellow",
@@ -707,7 +711,7 @@
           "textMode": "value",
           "wideLayout": true
         },
-        "pluginVersion": "12.0.2",
+        "pluginVersion": "11.5.2",
         "targets": [
           {
             "application": {
@@ -813,7 +817,8 @@
               "mode": "absolute",
               "steps": [
                 {
-                  "color": "rgba(50, 172, 45, 0.97)"
+                  "color": "rgba(50, 172, 45, 0.97)",
+                  "value": null
                 },
                 {
                   "color": "rgba(237, 129, 40, 0.89)",
@@ -853,7 +858,7 @@
           "sizing": "auto",
           "text": {}
         },
-        "pluginVersion": "12.0.2",
+        "pluginVersion": "11.5.2",
         "targets": [
           {
             "application": {
@@ -965,7 +970,8 @@
               "mode": "absolute",
               "steps": [
                 {
-                  "color": "green"
+                  "color": "green",
+                  "value": null
                 },
                 {
                   "color": "red",
@@ -1048,7 +1054,7 @@
             "sort": "none"
           }
         },
-        "pluginVersion": "12.0.2",
+        "pluginVersion": "11.5.2",
         "targets": [
           {
             "application": {
@@ -1192,7 +1198,8 @@
               "mode": "absolute",
               "steps": [
                 {
-                  "color": "rgba(50, 172, 45, 0.97)"
+                  "color": "rgba(50, 172, 45, 0.97)",
+                  "value": null
                 },
                 {
                   "color": "rgba(237, 129, 40, 0.89)",
@@ -1232,7 +1239,7 @@
           "sizing": "auto",
           "text": {}
         },
-        "pluginVersion": "12.0.2",
+        "pluginVersion": "11.5.2",
         "targets": [
           {
             "application": {
@@ -1309,7 +1316,8 @@
               "mode": "absolute",
               "steps": [
                 {
-                  "color": "green"
+                  "color": "green",
+                  "value": null
                 },
                 {
                   "color": "#EAB839",
@@ -1350,7 +1358,7 @@
           "textMode": "value",
           "wideLayout": true
         },
-        "pluginVersion": "12.0.2",
+        "pluginVersion": "11.5.2",
         "targets": [
           {
             "application": {
@@ -1427,7 +1435,8 @@
               "mode": "absolute",
               "steps": [
                 {
-                  "color": "green"
+                  "color": "green",
+                  "value": null
                 }
               ]
             }
@@ -1459,7 +1468,7 @@
           "textMode": "auto",
           "wideLayout": true
         },
-        "pluginVersion": "12.0.2",
+        "pluginVersion": "11.5.2",
         "targets": [
           {
             "application": {
@@ -1536,7 +1545,8 @@
               "mode": "absolute",
               "steps": [
                 {
-                  "color": "green"
+                  "color": "green",
+                  "value": null
                 },
                 {
                   "color": "#EAB839",
@@ -1584,7 +1594,7 @@
           "text": {},
           "valueMode": "color"
         },
-        "pluginVersion": "12.0.2",
+        "pluginVersion": "11.5.2",
         "targets": [
           {
             "application": {
@@ -1689,7 +1699,8 @@
               "mode": "absolute",
               "steps": [
                 {
-                  "color": "green"
+                  "color": "green",
+                  "value": null
                 }
               ]
             }
@@ -1721,7 +1732,7 @@
           "textMode": "value",
           "wideLayout": true
         },
-        "pluginVersion": "12.0.2",
+        "pluginVersion": "11.5.2",
         "targets": [
           {
             "application": {
@@ -1811,7 +1822,8 @@
               "mode": "absolute",
               "steps": [
                 {
-                  "color": "green"
+                  "color": "green",
+                  "value": null
                 }
               ]
             }
@@ -1843,7 +1855,7 @@
           "textMode": "auto",
           "wideLayout": true
         },
-        "pluginVersion": "12.0.2",
+        "pluginVersion": "11.5.2",
         "targets": [
           {
             "application": {
@@ -1969,7 +1981,8 @@
               "mode": "absolute",
               "steps": [
                 {
-                  "color": "green"
+                  "color": "green",
+                  "value": null
                 },
                 {
                   "color": "text",
@@ -2206,7 +2219,8 @@
               "mode": "absolute",
               "steps": [
                 {
-                  "color": "green"
+                  "color": "green",
+                  "value": null
                 },
                 {
                   "color": "#EAB839",
@@ -2359,7 +2373,8 @@
               "mode": "absolute",
               "steps": [
                 {
-                  "color": "green"
+                  "color": "green",
+                  "value": null
                 },
                 {
                   "color": "red",
@@ -2598,7 +2613,7 @@
           "h": 1,
           "w": 24,
           "x": 0,
-          "y": 39
+          "y": 27
         },
         "id": 41,
         "panels": [],
@@ -2634,7 +2649,8 @@
               "mode": "absolute",
               "steps": [
                 {
-                  "color": "green"
+                  "color": "green",
+                  "value": null
                 }
               ]
             },
@@ -2646,7 +2662,7 @@
           "h": 7,
           "w": 4,
           "x": 0,
-          "y": 40
+          "y": 28
         },
         "id": 19,
         "maxDataPoints": 100,
@@ -2779,7 +2795,8 @@
               "mode": "absolute",
               "steps": [
                 {
-                  "color": "green"
+                  "color": "green",
+                  "value": null
                 },
                 {
                   "color": "text",
@@ -2834,7 +2851,7 @@
           "h": 7,
           "w": 16,
           "x": 4,
-          "y": 40
+          "y": 28
         },
         "id": 18,
         "options": {
@@ -3000,7 +3017,8 @@
               "mode": "absolute",
               "steps": [
                 {
-                  "color": "green"
+                  "color": "green",
+                  "value": null
                 }
               ]
             },
@@ -3012,7 +3030,7 @@
           "h": 7,
           "w": 4,
           "x": 20,
-          "y": 40
+          "y": 28
         },
         "id": 21,
         "maxDataPoints": 100,
@@ -3103,7 +3121,7 @@
           "h": 1,
           "w": 24,
           "x": 0,
-          "y": 47
+          "y": 49
         },
         "id": 29,
         "panels": [],
@@ -3115,15 +3133,11 @@
           "type": "alexanderzobnin-zabbix-datasource",
           "uid": "eepnfj3d6hrlsb"
         },
-        "fieldConfig": {
-          "defaults": {},
-          "overrides": []
-        },
         "gridPos": {
           "h": 12,
           "w": 24,
           "x": 0,
-          "y": 48
+          "y": 50
         },
         "id": 17,
         "options": {
@@ -3169,7 +3183,6 @@
             }
           ],
           "severityField": true,
-          "showDatasourceName": false,
           "showTags": false,
           "sortProblems": "lastchange",
           "statusField": false,
@@ -3219,7 +3232,7 @@
             }
           ]
         },
-        "pluginVersion": "5.1.0",
+        "pluginVersion": "5.0.2",
         "targets": [
           {
             "application": {
@@ -3287,23 +3300,15 @@
         "type": "alexanderzobnin-zabbix-triggers-panel"
       }
     ],
-    "preload": false,
     "refresh": "30s",
-    "schemaVersion": 41,
+    "schemaVersion": 40,
     "tags": [
       "zabbix"
     ],
     "templating": {
       "list": [
         {
-          "current": {
-            "text": [
-              "All"
-            ],
-            "value": [
-              "$__all"
-            ]
-          },
+          "current": {},
           "datasource": {
             "type": "alexanderzobnin-zabbix-datasource",
             "uid": "eepnfj3d6hrlsb"
@@ -3328,10 +3333,7 @@
         },
         {
           "allowCustomValue": true,
-          "current": {
-            "text": "MEU-PC-48GB",
-            "value": "MEU-PC-48GB"
-          },
+          "current": {},
           "datasource": {
             "type": "alexanderzobnin-zabbix-datasource",
             "uid": "eepnfj3d6hrlsb"
@@ -3355,10 +3357,7 @@
         },
         {
           "allowCustomValue": true,
-          "current": {
-            "text": "All",
-            "value": "$__all"
-          },
+          "current": {},
           "datasource": {
             "type": "alexanderzobnin-zabbix-datasource",
             "uid": "eepnfj3d6hrlsb"
@@ -3383,10 +3382,7 @@
         },
         {
           "allowCustomValue": true,
-          "current": {
-            "text": "All",
-            "value": "$__all"
-          },
+          "current": {},
           "datasource": {
             "type": "alexanderzobnin-zabbix-datasource",
             "uid": "eepnfj3d6hrlsb"
@@ -3411,10 +3407,7 @@
         },
         {
           "allowCustomValue": true,
-          "current": {
-            "text": "All",
-            "value": "$__all"
-          },
+          "current": {},
           "datasource": {
             "type": "alexanderzobnin-zabbix-datasource",
             "uid": "eepnfj3d6hrlsb"
@@ -3445,6 +3438,7 @@
     },
     "timepicker": {},
     "timezone": "",
-    "title": "Zabbix - Full Server Status"
+    "title": "Zabbix - Full Server Status",
+    "weekStart": ""
   }
 }

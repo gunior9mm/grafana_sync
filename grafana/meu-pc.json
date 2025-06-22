@@ -639,6 +639,19 @@
         "type": "stat"
       },
       {
+        "collapsed": false,
+        "gridPos": {
+          "h": 1,
+          "w": 24,
+          "x": 0,
+          "y": 5
+        },
+        "id": 11,
+        "panels": [],
+        "title": "Recursos SO",
+        "type": "row"
+      },
+      {
         "datasource": {
           "type": "alexanderzobnin-zabbix-datasource",
           "uid": "eepnfj3d6hrlsb"
@@ -701,7 +714,7 @@
           "h": 10,
           "w": 6,
           "x": 0,
-          "y": 5
+          "y": 6
         },
         "id": 1,
         "options": {
@@ -838,7 +851,7 @@
           "h": 10,
           "w": 6,
           "x": 6,
-          "y": 5
+          "y": 6
         },
         "id": 2,
         "options": {
@@ -988,7 +1001,7 @@
           "h": 10,
           "w": 6,
           "x": 12,
-          "y": 5
+          "y": 6
         },
         "id": 3,
         "options": {
@@ -1178,7 +1191,7 @@
           "h": 10,
           "w": 6,
           "x": 18,
-          "y": 5
+          "y": 6
         },
         "id": 4,
         "options": {
@@ -1250,6 +1263,564 @@
           }
         ],
         "title": "Partition Utilization",
+        "type": "timeseries"
+      },
+      {
+        "collapsed": false,
+        "gridPos": {
+          "h": 1,
+          "w": 24,
+          "x": 0,
+          "y": 16
+        },
+        "id": 12,
+        "panels": [],
+        "title": "Row title",
+        "type": "row"
+      },
+      {
+        "datasource": {
+          "type": "alexanderzobnin-zabbix-datasource",
+          "uid": "eepnfj3d6hrlsb"
+        },
+        "fieldConfig": {
+          "defaults": {
+            "color": {
+              "mode": "thresholds"
+            },
+            "mappings": [],
+            "thresholds": {
+              "mode": "absolute",
+              "steps": [
+                {
+                  "color": "text"
+                },
+                {
+                  "color": "red",
+                  "value": 80
+                }
+              ]
+            }
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 5,
+          "w": 6,
+          "x": 0,
+          "y": 17
+        },
+        "id": 13,
+        "options": {
+          "colorMode": "value",
+          "graphMode": "area",
+          "justifyMode": "auto",
+          "orientation": "auto",
+          "percentChangeColorMode": "standard",
+          "reduceOptions": {
+            "calcs": [
+              "lastNotNull"
+            ],
+            "fields": "/^GPU Name$/",
+            "values": false
+          },
+          "showPercentChange": false,
+          "textMode": "auto",
+          "wideLayout": true
+        },
+        "pluginVersion": "12.0.2",
+        "targets": [
+          {
+            "application": {
+              "filter": ""
+            },
+            "countTriggersBy": "",
+            "evaltype": "0",
+            "functions": [],
+            "group": {
+              "filter": "Windows servers"
+            },
+            "host": {
+              "filter": "MEU-PC-48GB"
+            },
+            "item": {
+              "filter": "GPU Name"
+            },
+            "itemTag": {
+              "filter": ""
+            },
+            "macro": {
+              "filter": ""
+            },
+            "options": {
+              "count": false,
+              "disableDataAlignment": false,
+              "showDisabledItems": false,
+              "skipEmptyValues": false,
+              "useTrends": "default",
+              "useZabbixValueMapping": false
+            },
+            "proxy": {
+              "filter": ""
+            },
+            "queryType": "2",
+            "refId": "A",
+            "resultFormat": "time_series",
+            "schema": 12,
+            "table": {
+              "skipEmptyValues": false
+            },
+            "tags": {
+              "filter": ""
+            },
+            "textFilter": "",
+            "trigger": {
+              "filter": ""
+            }
+          }
+        ],
+        "title": "GPU Name",
+        "type": "stat"
+      },
+      {
+        "datasource": {
+          "type": "alexanderzobnin-zabbix-datasource",
+          "uid": "eepnfj3d6hrlsb"
+        },
+        "fieldConfig": {
+          "defaults": {
+            "color": {
+              "mode": "thresholds"
+            },
+            "mappings": [],
+            "thresholds": {
+              "mode": "absolute",
+              "steps": [
+                {
+                  "color": "text"
+                },
+                {
+                  "color": "red",
+                  "value": 80
+                }
+              ]
+            }
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 5,
+          "w": 6,
+          "x": 6,
+          "y": 17
+        },
+        "id": 14,
+        "options": {
+          "colorMode": "value",
+          "graphMode": "area",
+          "justifyMode": "auto",
+          "orientation": "auto",
+          "percentChangeColorMode": "standard",
+          "reduceOptions": {
+            "calcs": [
+              "lastNotNull"
+            ],
+            "fields": "/^Driver version$/",
+            "values": false
+          },
+          "showPercentChange": false,
+          "textMode": "auto",
+          "wideLayout": true
+        },
+        "pluginVersion": "12.0.2",
+        "targets": [
+          {
+            "application": {
+              "filter": ""
+            },
+            "countTriggersBy": "",
+            "evaltype": "0",
+            "functions": [],
+            "group": {
+              "filter": "Windows servers"
+            },
+            "host": {
+              "filter": "MEU-PC-48GB"
+            },
+            "item": {
+              "filter": "Driver version"
+            },
+            "itemTag": {
+              "filter": ""
+            },
+            "macro": {
+              "filter": ""
+            },
+            "options": {
+              "count": false,
+              "disableDataAlignment": false,
+              "showDisabledItems": false,
+              "skipEmptyValues": false,
+              "useTrends": "default",
+              "useZabbixValueMapping": false
+            },
+            "proxy": {
+              "filter": ""
+            },
+            "queryType": "2",
+            "refId": "A",
+            "resultFormat": "time_series",
+            "schema": 12,
+            "table": {
+              "skipEmptyValues": false
+            },
+            "tags": {
+              "filter": ""
+            },
+            "textFilter": "",
+            "trigger": {
+              "filter": ""
+            }
+          }
+        ],
+        "title": "GPU Driver Version",
+        "type": "stat"
+      },
+      {
+        "datasource": {
+          "type": "alexanderzobnin-zabbix-datasource",
+          "uid": "eepnfj3d6hrlsb"
+        },
+        "fieldConfig": {
+          "defaults": {
+            "color": {
+              "mode": "thresholds"
+            },
+            "mappings": [],
+            "thresholds": {
+              "mode": "absolute",
+              "steps": [
+                {
+                  "color": "text"
+                }
+              ]
+            }
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 5,
+          "w": 6,
+          "x": 12,
+          "y": 17
+        },
+        "id": 15,
+        "options": {
+          "colorMode": "value",
+          "graphMode": "area",
+          "justifyMode": "auto",
+          "orientation": "auto",
+          "percentChangeColorMode": "standard",
+          "reduceOptions": {
+            "calcs": [
+              "lastNotNull"
+            ],
+            "fields": "/^\\[GPU\\-0716e5c8\\-fcf1\\-a1eb\\-291e\\-464e511d43b2\\]: FB memory, total$/",
+            "values": false
+          },
+          "showPercentChange": false,
+          "textMode": "auto",
+          "wideLayout": true
+        },
+        "pluginVersion": "12.0.2",
+        "targets": [
+          {
+            "application": {
+              "filter": ""
+            },
+            "countTriggersBy": "",
+            "evaltype": "0",
+            "functions": [],
+            "group": {
+              "filter": "Windows servers"
+            },
+            "host": {
+              "filter": "MEU-PC-48GB"
+            },
+            "item": {
+              "filter": "[GPU-0716e5c8-fcf1-a1eb-291e-464e511d43b2]: FB memory, total"
+            },
+            "itemTag": {
+              "filter": ""
+            },
+            "macro": {
+              "filter": ""
+            },
+            "options": {
+              "count": false,
+              "disableDataAlignment": false,
+              "showDisabledItems": false,
+              "skipEmptyValues": false,
+              "useTrends": "default",
+              "useZabbixValueMapping": false
+            },
+            "proxy": {
+              "filter": ""
+            },
+            "queryType": "0",
+            "refId": "A",
+            "resultFormat": "time_series",
+            "schema": 12,
+            "table": {
+              "skipEmptyValues": false
+            },
+            "tags": {
+              "filter": ""
+            },
+            "textFilter": "",
+            "trigger": {
+              "filter": ""
+            }
+          }
+        ],
+        "title": "GPU Total Memory",
+        "type": "stat"
+      },
+      {
+        "datasource": {
+          "type": "alexanderzobnin-zabbix-datasource",
+          "uid": "eepnfj3d6hrlsb"
+        },
+        "fieldConfig": {
+          "defaults": {
+            "color": {
+              "mode": "thresholds"
+            },
+            "mappings": [],
+            "thresholds": {
+              "mode": "absolute",
+              "steps": [
+                {
+                  "color": "text"
+                }
+              ]
+            }
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 5,
+          "w": 6,
+          "x": 18,
+          "y": 17
+        },
+        "id": 16,
+        "options": {
+          "colorMode": "value",
+          "graphMode": "area",
+          "justifyMode": "auto",
+          "orientation": "auto",
+          "percentChangeColorMode": "standard",
+          "reduceOptions": {
+            "calcs": [
+              "lastNotNull"
+            ],
+            "fields": "/^\\[GPU\\-0716e5c8\\-fcf1\\-a1eb\\-291e\\-464e511d43b2\\]: FB memory, total$/",
+            "values": false
+          },
+          "showPercentChange": false,
+          "textMode": "auto",
+          "wideLayout": true
+        },
+        "pluginVersion": "12.0.2",
+        "targets": [
+          {
+            "application": {
+              "filter": ""
+            },
+            "countTriggersBy": "",
+            "evaltype": "0",
+            "functions": [],
+            "group": {
+              "filter": "Windows servers"
+            },
+            "host": {
+              "filter": "MEU-PC-48GB"
+            },
+            "item": {
+              "filter": ""
+            },
+            "itemTag": {
+              "filter": ""
+            },
+            "macro": {
+              "filter": ""
+            },
+            "options": {
+              "count": false,
+              "disableDataAlignment": false,
+              "showDisabledItems": false,
+              "skipEmptyValues": false,
+              "useTrends": "default",
+              "useZabbixValueMapping": false
+            },
+            "proxy": {
+              "filter": ""
+            },
+            "queryType": "0",
+            "refId": "A",
+            "resultFormat": "time_series",
+            "schema": 12,
+            "table": {
+              "skipEmptyValues": false
+            },
+            "tags": {
+              "filter": ""
+            },
+            "textFilter": "",
+            "trigger": {
+              "filter": ""
+            }
+          }
+        ],
+        "title": "GPU Total Memory",
+        "type": "stat"
+      },
+      {
+        "datasource": {
+          "type": "alexanderzobnin-zabbix-datasource",
+          "uid": "eepnfj3d6hrlsb"
+        },
+        "fieldConfig": {
+          "defaults": {
+            "color": {
+              "mode": "palette-classic"
+            },
+            "custom": {
+              "axisBorderShow": false,
+              "axisCenteredZero": false,
+              "axisColorMode": "text",
+              "axisLabel": "",
+              "axisPlacement": "auto",
+              "barAlignment": 0,
+              "barWidthFactor": 0.6,
+              "drawStyle": "line",
+              "fillOpacity": 0,
+              "gradientMode": "none",
+              "hideFrom": {
+                "legend": false,
+                "tooltip": false,
+                "viz": false
+              },
+              "insertNulls": false,
+              "lineInterpolation": "linear",
+              "lineWidth": 1,
+              "pointSize": 5,
+              "scaleDistribution": {
+                "type": "linear"
+              },
+              "showPoints": "auto",
+              "spanNulls": false,
+              "stacking": {
+                "group": "A",
+                "mode": "none"
+              },
+              "thresholdsStyle": {
+                "mode": "off"
+              }
+            },
+            "mappings": [],
+            "thresholds": {
+              "mode": "absolute",
+              "steps": [
+                {
+                  "color": "green"
+                },
+                {
+                  "color": "red",
+                  "value": 80
+                }
+              ]
+            }
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 10,
+          "w": 6,
+          "x": 0,
+          "y": 22
+        },
+        "id": 17,
+        "options": {
+          "legend": {
+            "calcs": [],
+            "displayMode": "list",
+            "placement": "bottom",
+            "showLegend": true
+          },
+          "tooltip": {
+            "hideZeros": false,
+            "mode": "single",
+            "sort": "none"
+          }
+        },
+        "pluginVersion": "12.0.2",
+        "targets": [
+          {
+            "application": {
+              "filter": ""
+            },
+            "countTriggersBy": "",
+            "datasource": {
+              "type": "alexanderzobnin-zabbix-datasource",
+              "uid": "eepnfj3d6hrlsb"
+            },
+            "evaltype": "0",
+            "functions": [],
+            "group": {
+              "filter": "Windows servers"
+            },
+            "host": {
+              "filter": "MEU-PC-48GB"
+            },
+            "item": {
+              "filter": "[GPU-0716e5c8-fcf1-a1eb-291e-464e511d43b2]: GPU utilization"
+            },
+            "itemTag": {
+              "filter": ""
+            },
+            "macro": {
+              "filter": ""
+            },
+            "options": {
+              "count": false,
+              "disableDataAlignment": false,
+              "showDisabledItems": false,
+              "skipEmptyValues": false,
+              "useTrends": "default",
+              "useZabbixValueMapping": false
+            },
+            "proxy": {
+              "filter": ""
+            },
+            "queryType": "0",
+            "refId": "A",
+            "resultFormat": "time_series",
+            "schema": 12,
+            "table": {
+              "skipEmptyValues": false
+            },
+            "tags": {
+              "filter": ""
+            },
+            "textFilter": "",
+            "trigger": {
+              "filter": ""
+            }
+          }
+        ],
+        "title": "GPU Utilization",
         "type": "timeseries"
       }
     ],

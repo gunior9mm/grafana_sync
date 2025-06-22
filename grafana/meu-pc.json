@@ -1625,7 +1625,7 @@
             "calcs": [
               "lastNotNull"
             ],
-            "fields": "/^\\[GPU\\-0716e5c8\\-fcf1\\-a1eb\\-291e\\-464e511d43b2\\]: FB memory, total$/",
+            "fields": "",
             "values": false
           },
           "showPercentChange": false,
@@ -1648,7 +1648,7 @@
               "filter": "MEU-PC-48GB"
             },
             "item": {
-              "filter": "GPU"
+              "filter": "[NVIDIA GeForce RTX 3060]: Fan speed"
             },
             "itemTag": {
               "filter": ""
@@ -1683,7 +1683,7 @@
             }
           }
         ],
-        "title": "GPU Total Memory",
+        "title": "GPU Fan",
         "type": "stat"
       },
       {

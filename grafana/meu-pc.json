@@ -2059,7 +2059,7 @@
               "filter": "MEU-PC-48GB"
             },
             "item": {
-              "filter": "[NVIDIA GeForce RTX 3060]: Fan speed"
+              "filter": "[NVIDIA GeForce RTX 3060]: FB memory, used, perc"
             },
             "itemTag": {
               "filter": "component: nvidia"
@@ -2094,7 +2094,7 @@
             }
           }
         ],
-        "title": "GPU Fan Utilization",
+        "title": "GPU Memory Utilization",
         "type": "timeseries"
       },
       {

@@ -615,10 +615,10 @@
             "evaltype": "0",
             "functions": [],
             "group": {
-              "filter": "Windows servers"
+              "filter": "Zabbix servers"
             },
             "host": {
-              "filter": "MEU-PC-48GB"
+              "filter": "Zabbix server"
             },
             "item": {
               "filter": "Status Internet"
@@ -1751,10 +1751,10 @@
             "evaltype": "0",
             "functions": [],
             "group": {
-              "filter": "Windows servers"
+              "filter": "Zabbix servers"
             },
             "host": {
-              "filter": "MEU-PC-48GB"
+              "filter": "Zabbix server"
             },
             "item": {
               "filter": "Latência Internet"

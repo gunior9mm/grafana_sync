@@ -53,7 +53,7 @@
           "overrides": []
         },
         "gridPos": {
-          "h": 5,
+          "h": 4,
           "w": 3,
           "x": 0,
           "y": 0
@@ -154,7 +154,7 @@
           "overrides": []
         },
         "gridPos": {
-          "h": 5,
+          "h": 4,
           "w": 3,
           "x": 3,
           "y": 0
@@ -262,7 +262,7 @@
           "overrides": []
         },
         "gridPos": {
-          "h": 5,
+          "h": 4,
           "w": 3,
           "x": 6,
           "y": 0
@@ -271,7 +271,7 @@
         "options": {
           "colorMode": "value",
           "graphMode": "area",
-          "justifyMode": "auto",
+          "justifyMode": "center",
           "orientation": "horizontal",
           "percentChangeColorMode": "standard",
           "reduceOptions": {
@@ -282,7 +282,10 @@
             "values": false
           },
           "showPercentChange": false,
-          "textMode": "auto",
+          "text": {
+            "valueSize": 25
+          },
+          "textMode": "value",
           "wideLayout": true
         },
         "pluginVersion": "12.0.2",
@@ -366,7 +369,7 @@
           "overrides": []
         },
         "gridPos": {
-          "h": 5,
+          "h": 4,
           "w": 3,
           "x": 9,
           "y": 0
@@ -466,7 +469,7 @@
           "overrides": []
         },
         "gridPos": {
-          "h": 5,
+          "h": 4,
           "w": 3,
           "x": 12,
           "y": 0
@@ -582,7 +585,7 @@
           "overrides": []
         },
         "gridPos": {
-          "h": 5,
+          "h": 4,
           "w": 3,
           "x": 15,
           "y": 0
@@ -682,7 +685,7 @@
           "overrides": []
         },
         "gridPos": {
-          "h": 5,
+          "h": 4,
           "w": 6,
           "x": 18,
           "y": 0
@@ -765,7 +768,7 @@
           "h": 1,
           "w": 24,
           "x": 0,
-          "y": 5
+          "y": 4
         },
         "id": 11,
         "panels": [],
@@ -835,7 +838,7 @@
           "h": 10,
           "w": 6,
           "x": 0,
-          "y": 6
+          "y": 5
         },
         "id": 1,
         "options": {
@@ -972,7 +975,7 @@
           "h": 10,
           "w": 6,
           "x": 6,
-          "y": 6
+          "y": 5
         },
         "id": 2,
         "options": {
@@ -1122,7 +1125,7 @@
           "h": 10,
           "w": 6,
           "x": 12,
-          "y": 6
+          "y": 5
         },
         "id": 3,
         "options": {
@@ -1312,7 +1315,7 @@
           "h": 10,
           "w": 6,
           "x": 18,
-          "y": 6
+          "y": 5
         },
         "id": 4,
         "options": {
@@ -1450,7 +1453,7 @@
           "h": 10,
           "w": 6,
           "x": 0,
-          "y": 16
+          "y": 15
         },
         "id": 22,
         "options": {
@@ -1588,7 +1591,7 @@
           "h": 10,
           "w": 6,
           "x": 6,
-          "y": 16
+          "y": 15
         },
         "id": 23,
         "options": {
@@ -1725,7 +1728,7 @@
           "h": 10,
           "w": 6,
           "x": 12,
-          "y": 16
+          "y": 15
         },
         "id": 10,
         "options": {
@@ -1871,7 +1874,7 @@
           "h": 10,
           "w": 6,
           "x": 18,
-          "y": 16
+          "y": 15
         },
         "id": 21,
         "options": {
@@ -2004,7 +2007,7 @@
           "h": 1,
           "w": 24,
           "x": 0,
-          "y": 26
+          "y": 25
         },
         "id": 12,
         "panels": [

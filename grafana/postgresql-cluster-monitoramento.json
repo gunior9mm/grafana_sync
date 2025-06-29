@@ -1,5 +1,5 @@
 {
-  "apiVersion": "dashboard.grafana.app/v1beta1",
+  "apiVersion": "dashboard.grafana.app/v0alpha1",
   "kind": "Dashboard",
   "metadata": {
     "name": "f75bdb5e-f845-4a47-9c97-4ffbaa4d9452"
@@ -31,6 +31,7 @@
     "fiscalYearStartMonth": 0,
     "graphTooltip": 1,
     "links": [],
+    "liveNow": false,
     "panels": [
       {
         "datasource": {
@@ -42,116 +43,6 @@
             "color": {
               "mode": "thresholds"
             },
-            "mappings": [],
-            "thresholds": {
-              "mode": "absolute",
-              "steps": [
-                {
-                  "color": "dark-green"
-                }
-              ]
-            },
-            "unit": "s"
-          },
-          "overrides": []
-        },
-        "gridPos": {
-          "h": 3,
-          "w": 3,
-          "x": 0,
-          "y": 0
-        },
-        "id": 50,
-        "options": {
-          "colorMode": "value",
-          "graphMode": "none",
-          "justifyMode": "auto",
-          "orientation": "auto",
-          "percentChangeColorMode": "standard",
-          "reduceOptions": {
-            "calcs": [
-              "lastNotNull"
-            ],
-            "fields": "/^System name$/",
-            "values": false
-          },
-          "showPercentChange": false,
-          "text": {},
-          "textMode": "auto",
-          "wideLayout": true
-        },
-        "pluginVersion": "12.0.2",
-        "targets": [
-          {
-            "application": {
-              "filter": ""
-            },
-            "countTriggersBy": "",
-            "datasource": {
-              "type": "alexanderzobnin-zabbix-datasource",
-              "uid": "eepnfj3d6hrlsb"
-            },
-            "evaltype": "0",
-            "functions": [],
-            "group": {
-              "filter": "Linux servers"
-            },
-            "host": {
-              "filter": "dtb1mzabbix001p"
-            },
-            "item": {
-              "filter": "System name"
-            },
-            "itemTag": {
-              "filter": ""
-            },
-            "macro": {
-              "filter": ""
-            },
-            "options": {
-              "count": true,
-              "disableDataAlignment": false,
-              "minSeverity": 3,
-              "showDisabledItems": false,
-              "skipEmptyValues": false,
-              "useTrends": "default",
-              "useZabbixValueMapping": false
-            },
-            "proxy": {
-              "filter": ""
-            },
-            "queryType": "2",
-            "refId": "A",
-            "resultFormat": "time_series",
-            "schema": 12,
-            "table": {
-              "skipEmptyValues": false
-            },
-            "tags": {
-              "filter": ""
-            },
-            "textFilter": "",
-            "trigger": {
-              "filter": ""
-            },
-            "triggers": {
-              "acknowledged": 2
-            }
-          }
-        ],
-        "title": "Hostname",
-        "type": "stat"
-      },
-      {
-        "datasource": {
-          "type": "alexanderzobnin-zabbix-datasource",
-          "uid": "eepnfj3d6hrlsb"
-        },
-        "fieldConfig": {
-          "defaults": {
-            "color": {
-              "mode": "thresholds"
-            },
             "mappings": [
               {
                 "options": {
@@ -173,7 +64,8 @@
               "mode": "absolute",
               "steps": [
                 {
-                  "color": "green"
+                  "color": "green",
+                  "value": null
                 }
               ]
             }
@@ -181,9 +73,9 @@
           "overrides": []
         },
         "gridPos": {
-          "h": 3,
+          "h": 6,
           "w": 3,
-          "x": 3,
+          "x": 0,
           "y": 0
         },
         "id": 48,
@@ -192,7 +84,6 @@
           "graphMode": "area",
           "justifyMode": "auto",
           "orientation": "auto",
-          "percentChangeColorMode": "standard",
           "reduceOptions": {
             "calcs": [
               "lastNotNull"
@@ -205,7 +96,7 @@
           "textMode": "auto",
           "wideLayout": true
         },
-        "pluginVersion": "12.0.2",
+        "pluginVersion": "10.4.1",
         "targets": [
           {
             "application": {
@@ -216,7 +107,6 @@
               "type": "alexanderzobnin-zabbix-datasource",
               "uid": "eepnfj3d6hrlsb"
             },
-            "evaltype": "0",
             "functions": [],
             "group": {
               "filter": "Linux servers"
@@ -225,7 +115,7 @@
               "filter": "dtb1mzabbix001p"
             },
             "item": {
-              "filter": "Ping"
+              "filter": "PostgreSQL: Ping"
             },
             "itemTag": {
               "filter": ""
@@ -264,7 +154,7 @@
             }
           }
         ],
-        "title": "Postgresql status",
+        "title": "Postgresql status dtb1pgsql001p",
         "type": "stat"
       },
       {
@@ -298,7 +188,8 @@
               "mode": "absolute",
               "steps": [
                 {
-                  "color": "dark-green"
+                  "color": "green",
+                  "value": null
                 }
               ]
             }
@@ -306,18 +197,17 @@
           "overrides": []
         },
         "gridPos": {
-          "h": 3,
+          "h": 6,
           "w": 3,
-          "x": 6,
+          "x": 3,
           "y": 0
         },
-        "id": 57,
+        "id": 49,
         "options": {
           "colorMode": "value",
           "graphMode": "area",
           "justifyMode": "auto",
           "orientation": "auto",
-          "percentChangeColorMode": "standard",
           "reduceOptions": {
             "calcs": [
               "lastNotNull"
@@ -330,7 +220,7 @@
           "textMode": "auto",
           "wideLayout": true
         },
-        "pluginVersion": "12.0.2",
+        "pluginVersion": "10.4.1",
         "targets": [
           {
             "application": {
@@ -341,16 +231,15 @@
               "type": "alexanderzobnin-zabbix-datasource",
               "uid": "eepnfj3d6hrlsb"
             },
-            "evaltype": "0",
             "functions": [],
             "group": {
               "filter": "Linux servers"
             },
             "host": {
-              "filter": "dtb1mzabbix001p"
+              "filter": "dtb2pgsql001p.sicredi.net"
             },
             "item": {
-              "filter": "postgresql.service: Active time"
+              "filter": "PostgreSQL: Ping"
             },
             "itemTag": {
               "filter": ""
@@ -389,148 +278,7 @@
             }
           }
         ],
-        "title": "Postgresql systemd uptime",
-        "type": "stat"
-      },
-      {
-        "datasource": {
-          "type": "alexanderzobnin-zabbix-datasource",
-          "uid": "eepnfj3d6hrlsb"
-        },
-        "fieldConfig": {
-          "defaults": {
-            "color": {
-              "mode": "thresholds"
-            },
-            "mappings": [
-              {
-                "options": {
-                  "0": {
-                    "color": "text",
-                    "index": 6,
-                    "text": "Unknown"
-                  },
-                  "1": {
-                    "color": "dark-green",
-                    "index": 0,
-                    "text": "Active"
-                  },
-                  "2": {
-                    "color": "dark-purple",
-                    "index": 1,
-                    "text": "Reloading"
-                  },
-                  "3": {
-                    "color": "dark-orange",
-                    "index": 2,
-                    "text": "Inactive"
-                  },
-                  "4": {
-                    "color": "dark-red",
-                    "index": 3,
-                    "text": "Failed"
-                  },
-                  "5": {
-                    "color": "dark-blue",
-                    "index": 4,
-                    "text": "Activating"
-                  },
-                  "6": {
-                    "color": "semi-dark-orange",
-                    "index": 5,
-                    "text": "Deactivating"
-                  }
-                },
-                "type": "value"
-              }
-            ],
-            "thresholds": {
-              "mode": "absolute",
-              "steps": [
-                {
-                  "color": "green"
-                }
-              ]
-            }
-          },
-          "overrides": []
-        },
-        "gridPos": {
-          "h": 3,
-          "w": 3,
-          "x": 9,
-          "y": 0
-        },
-        "id": 58,
-        "options": {
-          "colorMode": "value",
-          "graphMode": "area",
-          "justifyMode": "auto",
-          "orientation": "auto",
-          "percentChangeColorMode": "standard",
-          "reduceOptions": {
-            "calcs": [
-              "lastNotNull"
-            ],
-            "fields": "",
-            "values": false
-          },
-          "showPercentChange": false,
-          "textMode": "auto",
-          "wideLayout": true
-        },
-        "pluginVersion": "12.0.2",
-        "targets": [
-          {
-            "application": {
-              "filter": ""
-            },
-            "countTriggersBy": "",
-            "evaltype": "0",
-            "functions": [],
-            "group": {
-              "filter": "Linux servers"
-            },
-            "host": {
-              "filter": "dtb1mzabbix001p"
-            },
-            "item": {
-              "filter": "postgresql.service: Active state"
-            },
-            "itemTag": {
-              "filter": ""
-            },
-            "macro": {
-              "filter": ""
-            },
-            "options": {
-              "count": false,
-              "disableDataAlignment": false,
-              "showDisabledItems": false,
-              "skipEmptyValues": false,
-              "useTrends": "default",
-              "useZabbixValueMapping": false
-            },
-            "proxy": {
-              "filter": ""
-            },
-            "queryType": "0",
-            "refId": "A",
-            "resultFormat": "time_series",
-            "schema": 12,
-            "table": {
-              "skipEmptyValues": false
-            },
-            "tags": {
-              "filter": ""
-            },
-            "textFilter": "",
-            "trigger": {
-              "filter": ""
-            }
-          }
-        ],
-        "title": "Postgresql systemd status",
+        "title": "Postgresql status dtb2pgsql001p",
         "type": "stat"
       },
       {
@@ -564,7 +312,8 @@
               "mode": "absolute",
               "steps": [
                 {
-                  "color": "green"
+                  "color": "green",
+                  "value": null
                 }
               ]
             }
@@ -572,9 +321,9 @@
           "overrides": []
         },
         "gridPos": {
-          "h": 3,
+          "h": 6,
           "w": 3,
-          "x": 12,
+          "x": 6,
           "y": 0
         },
         "id": 33,
@@ -583,7 +332,6 @@
           "graphMode": "area",
           "justifyMode": "auto",
           "orientation": "auto",
-          "percentChangeColorMode": "standard",
           "reduceOptions": {
             "calcs": [
               "lastNotNull"
@@ -596,7 +344,7 @@
           "textMode": "auto",
           "wideLayout": true
         },
-        "pluginVersion": "12.0.2",
+        "pluginVersion": "10.4.1",
         "targets": [
           {
             "application": {
@@ -607,7 +355,6 @@
               "type": "alexanderzobnin-zabbix-datasource",
               "uid": "eepnfj3d6hrlsb"
             },
-            "evaltype": "0",
             "functions": [],
             "group": {
               "filter": "Linux servers"
@@ -655,19 +402,953 @@
             }
           }
         ],
-        "title": "Postgresql role dtb1mzabbix001p",
+        "title": "Postgresql role dtb1pgsql001p",
+        "type": "stat"
+      },
+      {
+        "datasource": {
+          "type": "alexanderzobnin-zabbix-datasource",
+          "uid": "eepnfj3d6hrlsb"
+        },
+        "fieldConfig": {
+          "defaults": {
+            "color": {
+              "mode": "thresholds"
+            },
+            "mappings": [
+              {
+                "options": {
+                  "0": {
+                    "color": "dark-green",
+                    "index": 1,
+                    "text": "Master"
+                  },
+                  "1": {
+                    "color": "dark-green",
+                    "index": 0,
+                    "text": "Standby"
+                  }
+                },
+                "type": "value"
+              }
+            ],
+            "thresholds": {
+              "mode": "absolute",
+              "steps": [
+                {
+                  "color": "green",
+                  "value": null
+                }
+              ]
+            }
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 6,
+          "w": 3,
+          "x": 9,
+          "y": 0
+        },
+        "id": 32,
+        "options": {
+          "colorMode": "value",
+          "graphMode": "area",
+          "justifyMode": "auto",
+          "orientation": "auto",
+          "reduceOptions": {
+            "calcs": [
+              "lastNotNull"
+            ],
+            "fields": "",
+            "values": false
+          },
+          "showPercentChange": false,
+          "text": {},
+          "textMode": "auto",
+          "wideLayout": true
+        },
+        "pluginVersion": "10.4.1",
+        "targets": [
+          {
+            "application": {
+              "filter": ""
+            },
+            "countTriggersBy": "",
+            "datasource": {
+              "type": "alexanderzobnin-zabbix-datasource",
+              "uid": "eepnfj3d6hrlsb"
+            },
+            "functions": [],
+            "group": {
+              "filter": "Linux servers"
+            },
+            "host": {
+              "filter": "dtb2pgsql001p.sicredi.net"
+            },
+            "item": {
+              "filter": "Replication: Recovery role"
+            },
+            "itemTag": {
+              "filter": ""
+            },
+            "macro": {
+              "filter": ""
+            },
+            "options": {
+              "count": true,
+              "disableDataAlignment": false,
+              "minSeverity": 3,
+              "showDisabledItems": false,
+              "skipEmptyValues": false,
+              "useTrends": "default",
+              "useZabbixValueMapping": false
+            },
+            "proxy": {
+              "filter": ""
+            },
+            "queryType": "0",
+            "refId": "A",
+            "resultFormat": "time_series",
+            "schema": 12,
+            "table": {
+              "skipEmptyValues": false
+            },
+            "tags": {
+              "filter": ""
+            },
+            "textFilter": "",
+            "trigger": {
+              "filter": ""
+            },
+            "triggers": {
+              "acknowledged": 2
+            }
+          }
+        ],
+        "title": "Postgresql role dtb2pgsql001p",
+        "type": "stat"
+      },
+      {
+        "datasource": {
+          "type": "alexanderzobnin-zabbix-datasource",
+          "uid": "eepnfj3d6hrlsb"
+        },
+        "fieldConfig": {
+          "defaults": {
+            "color": {
+              "mode": "thresholds"
+            },
+            "mappings": [],
+            "thresholds": {
+              "mode": "absolute",
+              "steps": [
+                {
+                  "color": "dark-green",
+                  "value": null
+                }
+              ]
+            },
+            "unit": "s"
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 3,
+          "w": 3,
+          "x": 12,
+          "y": 0
+        },
+        "id": 52,
+        "options": {
+          "colorMode": "value",
+          "graphMode": "none",
+          "justifyMode": "auto",
+          "orientation": "auto",
+          "reduceOptions": {
+            "calcs": [
+              "lastNotNull"
+            ],
+            "fields": "",
+            "values": false
+          },
+          "showPercentChange": false,
+          "text": {},
+          "textMode": "auto",
+          "wideLayout": true
+        },
+        "pluginVersion": "10.4.1",
+        "targets": [
+          {
+            "application": {
+              "filter": ""
+            },
+            "countTriggersBy": "",
+            "datasource": {
+              "type": "alexanderzobnin-zabbix-datasource",
+              "uid": "eepnfj3d6hrlsb"
+            },
+            "functions": [],
+            "group": {
+              "filter": "Linux servers"
+            },
+            "host": {
+              "filter": "dtb1mzabbix001p"
+            },
+            "item": {
+              "filter": "PostgreSQL: Uptime"
+            },
+            "itemTag": {
+              "filter": ""
+            },
+            "macro": {
+              "filter": ""
+            },
+            "options": {
+              "count": true,
+              "disableDataAlignment": false,
+              "minSeverity": 3,
+              "showDisabledItems": false,
+              "skipEmptyValues": false,
+              "useTrends": "default",
+              "useZabbixValueMapping": false
+            },
+            "proxy": {
+              "filter": ""
+            },
+            "queryType": "0",
+            "refId": "A",
+            "resultFormat": "time_series",
+            "schema": 12,
+            "table": {
+              "skipEmptyValues": false
+            },
+            "tags": {
+              "filter": ""
+            },
+            "textFilter": "",
+            "trigger": {
+              "filter": ""
+            },
+            "triggers": {
+              "acknowledged": 2
+            }
+          }
+        ],
+        "title": "Postgresql Uptime dtb1pgsql001p",
+        "type": "stat"
+      },
+      {
+        "datasource": {
+          "type": "alexanderzobnin-zabbix-datasource",
+          "uid": "eepnfj3d6hrlsb"
+        },
+        "fieldConfig": {
+          "defaults": {
+            "color": {
+              "mode": "thresholds"
+            },
+            "mappings": [],
+            "thresholds": {
+              "mode": "absolute",
+              "steps": [
+                {
+                  "color": "dark-green",
+                  "value": null
+                }
+              ]
+            },
+            "unit": "s"
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 3,
+          "w": 3,
+          "x": 15,
+          "y": 0
+        },
+        "id": 50,
+        "options": {
+          "colorMode": "value",
+          "graphMode": "none",
+          "justifyMode": "auto",
+          "orientation": "auto",
+          "reduceOptions": {
+            "calcs": [
+              "lastNotNull"
+            ],
+            "fields": "",
+            "values": false
+          },
+          "showPercentChange": false,
+          "text": {},
+          "textMode": "auto",
+          "wideLayout": true
+        },
+        "pluginVersion": "10.4.1",
+        "targets": [
+          {
+            "application": {
+              "filter": ""
+            },
+            "countTriggersBy": "",
+            "datasource": {
+              "type": "alexanderzobnin-zabbix-datasource",
+              "uid": "eepnfj3d6hrlsb"
+            },
+            "functions": [],
+            "group": {
+              "filter": "Linux servers"
+            },
+            "host": {
+              "filter": "dtb1mzabbix001p"
+            },
+            "item": {
+              "filter": "patroni.service: Active time"
+            },
+            "itemTag": {
+              "filter": ""
+            },
+            "macro": {
+              "filter": ""
+            },
+            "options": {
+              "count": true,
+              "disableDataAlignment": false,
+              "minSeverity": 3,
+              "showDisabledItems": false,
+              "skipEmptyValues": false,
+              "useTrends": "default",
+              "useZabbixValueMapping": false
+            },
+            "proxy": {
+              "filter": ""
+            },
+            "queryType": "0",
+            "refId": "A",
+            "resultFormat": "time_series",
+            "schema": 12,
+            "table": {
+              "skipEmptyValues": false
+            },
+            "tags": {
+              "filter": ""
+            },
+            "textFilter": "",
+            "trigger": {
+              "filter": ""
+            },
+            "triggers": {
+              "acknowledged": 2
+            }
+          }
+        ],
+        "title": "Patroni Uptime dtb1pgsql001p",
+        "type": "stat"
+      },
+      {
+        "datasource": {
+          "type": "alexanderzobnin-zabbix-datasource",
+          "uid": "eepnfj3d6hrlsb"
+        },
+        "fieldConfig": {
+          "defaults": {
+            "color": {
+              "mode": "thresholds"
+            },
+            "mappings": [],
+            "max": 1,
+            "min": 0,
+            "thresholds": {
+              "mode": "absolute",
+              "steps": [
+                {
+                  "color": "dark-green",
+                  "value": null
+                },
+                {
+                  "color": "dark-red",
+                  "value": 0.8
+                }
+              ]
+            },
+            "unit": "s"
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 6,
+          "w": 2,
+          "x": 18,
+          "y": 0
+        },
+        "id": 36,
+        "options": {
+          "minVizHeight": 75,
+          "minVizWidth": 75,
+          "orientation": "auto",
+          "reduceOptions": {
+            "calcs": [
+              "lastNotNull"
+            ],
+            "fields": "",
+            "values": false
+          },
+          "showThresholdLabels": false,
+          "showThresholdMarkers": true,
+          "sizing": "auto",
+          "text": {}
+        },
+        "pluginVersion": "10.4.1",
+        "targets": [
+          {
+            "application": {
+              "filter": ""
+            },
+            "countTriggersBy": "",
+            "datasource": {
+              "type": "alexanderzobnin-zabbix-datasource",
+              "uid": "eepnfj3d6hrlsb"
+            },
+            "functions": [],
+            "group": {
+              "filter": "Linux servers"
+            },
+            "host": {
+              "filter": "dtb2pgsql001p.sicredi.net"
+            },
+            "item": {
+              "filter": "/Application pg_dtb[0-9]pgsql001p: Replication flush lag/"
+            },
+            "itemTag": {
+              "filter": ""
+            },
+            "macro": {
+              "filter": ""
+            },
+            "options": {
+              "count": true,
+              "disableDataAlignment": false,
+              "minSeverity": 3,
+              "showDisabledItems": false,
+              "skipEmptyValues": false,
+              "useTrends": "default",
+              "useZabbixValueMapping": false
+            },
+            "proxy": {
+              "filter": ""
+            },
+            "queryType": "0",
+            "refId": "A",
+            "resultFormat": "time_series",
+            "schema": 12,
+            "table": {
+              "skipEmptyValues": false
+            },
+            "tags": {
+              "filter": ""
+            },
+            "textFilter": "",
+            "trigger": {
+              "filter": ""
+            },
+            "triggers": {
+              "acknowledged": 2
+            }
+          }
+        ],
+        "title": "Replication flush lag",
+        "type": "gauge"
+      },
+      {
+        "datasource": {
+          "type": "alexanderzobnin-zabbix-datasource",
+          "uid": "eepnfj3d6hrlsb"
+        },
+        "fieldConfig": {
+          "defaults": {
+            "color": {
+              "mode": "thresholds"
+            },
+            "mappings": [],
+            "max": 1,
+            "min": 0,
+            "thresholds": {
+              "mode": "absolute",
+              "steps": [
+                {
+                  "color": "dark-green",
+                  "value": null
+                },
+                {
+                  "color": "dark-red",
+                  "value": 0.8
+                }
+              ]
+            },
+            "unit": "s"
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 6,
+          "w": 2,
+          "x": 20,
+          "y": 0
+        },
+        "id": 37,
+        "options": {
+          "minVizHeight": 75,
+          "minVizWidth": 75,
+          "orientation": "auto",
+          "reduceOptions": {
+            "calcs": [
+              "lastNotNull"
+            ],
+            "fields": "",
+            "values": false
+          },
+          "showThresholdLabels": false,
+          "showThresholdMarkers": true,
+          "sizing": "auto",
+          "text": {}
+        },
+        "pluginVersion": "10.4.1",
+        "targets": [
+          {
+            "application": {
+              "filter": ""
+            },
+            "countTriggersBy": "",
+            "datasource": {
+              "type": "alexanderzobnin-zabbix-datasource",
+              "uid": "eepnfj3d6hrlsb"
+            },
+            "functions": [],
+            "group": {
+              "filter": "Linux servers"
+            },
+            "host": {
+              "filter": "/dtb[0-9]pgsql001p.sicredi.net/"
+            },
+            "item": {
+              "filter": "/Application pg_dtb[0-9]pgsql001p: Replication replay lag/"
+            },
+            "itemTag": {
+              "filter": ""
+            },
+            "macro": {
+              "filter": ""
+            },
+            "options": {
+              "count": true,
+              "disableDataAlignment": false,
+              "minSeverity": 3,
+              "showDisabledItems": false,
+              "skipEmptyValues": false,
+              "useTrends": "default",
+              "useZabbixValueMapping": false
+            },
+            "proxy": {
+              "filter": ""
+            },
+            "queryType": "0",
+            "refId": "A",
+            "resultFormat": "time_series",
+            "schema": 12,
+            "table": {
+              "skipEmptyValues": false
+            },
+            "tags": {
+              "filter": ""
+            },
+            "textFilter": "",
+            "trigger": {
+              "filter": ""
+            },
+            "triggers": {
+              "acknowledged": 2
+            }
+          }
+        ],
+        "title": "Replication replay lag",
+        "type": "gauge"
+      },
+      {
+        "datasource": {
+          "type": "alexanderzobnin-zabbix-datasource",
+          "uid": "eepnfj3d6hrlsb"
+        },
+        "fieldConfig": {
+          "defaults": {
+            "color": {
+              "mode": "thresholds"
+            },
+            "mappings": [],
+            "max": 1,
+            "min": 0,
+            "thresholds": {
+              "mode": "absolute",
+              "steps": [
+                {
+                  "color": "dark-green",
+                  "value": null
+                },
+                {
+                  "color": "dark-red",
+                  "value": 0.8
+                }
+              ]
+            },
+            "unit": "s"
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 6,
+          "w": 2,
+          "x": 22,
+          "y": 0
+        },
+        "id": 38,
+        "options": {
+          "minVizHeight": 75,
+          "minVizWidth": 75,
+          "orientation": "auto",
+          "reduceOptions": {
+            "calcs": [
+              "lastNotNull"
+            ],
+            "fields": "",
+            "values": false
+          },
+          "showThresholdLabels": false,
+          "showThresholdMarkers": true,
+          "sizing": "auto",
+          "text": {}
+        },
+        "pluginVersion": "10.4.1",
+        "targets": [
+          {
+            "application": {
+              "filter": ""
+            },
+            "countTriggersBy": "",
+            "datasource": {
+              "type": "alexanderzobnin-zabbix-datasource",
+              "uid": "eepnfj3d6hrlsb"
+            },
+            "functions": [],
+            "group": {
+              "filter": "Linux servers"
+            },
+            "host": {
+              "filter": "/dtb[0-9]pgsql001p.sicredi.net/"
+            },
+            "item": {
+              "filter": "/Application pg_dtb[0-9]pgsql001p: Replication write lag/"
+            },
+            "itemTag": {
+              "filter": ""
+            },
+            "macro": {
+              "filter": ""
+            },
+            "options": {
+              "count": true,
+              "disableDataAlignment": false,
+              "minSeverity": 3,
+              "showDisabledItems": false,
+              "skipEmptyValues": false,
+              "useTrends": "default",
+              "useZabbixValueMapping": false
+            },
+            "proxy": {
+              "filter": ""
+            },
+            "queryType": "0",
+            "refId": "A",
+            "resultFormat": "time_series",
+            "schema": 12,
+            "table": {
+              "skipEmptyValues": false
+            },
+            "tags": {
+              "filter": ""
+            },
+            "textFilter": "",
+            "trigger": {
+              "filter": ""
+            },
+            "triggers": {
+              "acknowledged": 2
+            }
+          }
+        ],
+        "title": "Replication write lag",
+        "type": "gauge"
+      },
+      {
+        "datasource": {
+          "type": "alexanderzobnin-zabbix-datasource",
+          "uid": "eepnfj3d6hrlsb"
+        },
+        "fieldConfig": {
+          "defaults": {
+            "color": {
+              "mode": "thresholds"
+            },
+            "mappings": [],
+            "thresholds": {
+              "mode": "absolute",
+              "steps": [
+                {
+                  "color": "dark-green",
+                  "value": null
+                }
+              ]
+            },
+            "unit": "s"
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 3,
+          "w": 3,
+          "x": 12,
+          "y": 3
+        },
+        "id": 53,
+        "options": {
+          "colorMode": "value",
+          "graphMode": "none",
+          "justifyMode": "auto",
+          "orientation": "auto",
+          "reduceOptions": {
+            "calcs": [
+              "lastNotNull"
+            ],
+            "fields": "",
+            "values": false
+          },
+          "showPercentChange": false,
+          "text": {},
+          "textMode": "auto",
+          "wideLayout": true
+        },
+        "pluginVersion": "10.4.1",
+        "targets": [
+          {
+            "application": {
+              "filter": ""
+            },
+            "countTriggersBy": "",
+            "datasource": {
+              "type": "alexanderzobnin-zabbix-datasource",
+              "uid": "eepnfj3d6hrlsb"
+            },
+            "functions": [
+              {
+                "$$hashKey": "object:320",
+                "def": {
+                  "category": "Alias",
+                  "defaultParams": [],
+                  "name": "setAliasByRegex",
+                  "params": [
+                    {
+                      "name": "aliasByRegex",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "params": [
+                  "prd-monitoring-sql-[0-9]\\.prd\\.cloud\\.sicredi\\.net"
+                ],
+                "text": "setAliasByRegex(prd-monitoring-sql-[0-9]\\.prd\\.cloud\\.sicredi\\.net)"
+              }
+            ],
+            "group": {
+              "filter": "Linux servers"
+            },
+            "host": {
+              "filter": "dtb2pgsql001p.sicredi.net"
+            },
+            "item": {
+              "filter": "PostgreSQL: Uptime"
+            },
+            "itemTag": {
+              "filter": ""
+            },
+            "macro": {
+              "filter": ""
+            },
+            "options": {
+              "count": true,
+              "disableDataAlignment": false,
+              "minSeverity": 3,
+              "showDisabledItems": false,
+              "skipEmptyValues": false,
+              "useTrends": "default",
+              "useZabbixValueMapping": false
+            },
+            "proxy": {
+              "filter": ""
+            },
+            "queryType": "0",
+            "refId": "A",
+            "resultFormat": "time_series",
+            "schema": 12,
+            "table": {
+              "skipEmptyValues": false
+            },
+            "tags": {
+              "filter": ""
+            },
+            "textFilter": "",
+            "trigger": {
+              "filter": ""
+            },
+            "triggers": {
+              "acknowledged": 2
+            }
+          }
+        ],
+        "title": "Postgresql Uptime dtb2pgsql001p",
+        "type": "stat"
+      },
+      {
+        "datasource": {
+          "type": "alexanderzobnin-zabbix-datasource",
+          "uid": "eepnfj3d6hrlsb"
+        },
+        "fieldConfig": {
+          "defaults": {
+            "color": {
+              "mode": "thresholds"
+            },
+            "mappings": [],
+            "thresholds": {
+              "mode": "absolute",
+              "steps": [
+                {
+                  "color": "dark-green",
+                  "value": null
+                }
+              ]
+            },
+            "unit": "s"
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 3,
+          "w": 3,
+          "x": 15,
+          "y": 3
+        },
+        "id": 42,
+        "options": {
+          "colorMode": "value",
+          "graphMode": "none",
+          "justifyMode": "auto",
+          "orientation": "auto",
+          "reduceOptions": {
+            "calcs": [
+              "lastNotNull"
+            ],
+            "fields": "",
+            "values": false
+          },
+          "showPercentChange": false,
+          "text": {},
+          "textMode": "auto",
+          "wideLayout": true
+        },
+        "pluginVersion": "10.4.1",
+        "targets": [
+          {
+            "application": {
+              "filter": ""
+            },
+            "countTriggersBy": "",
+            "datasource": {
+              "type": "alexanderzobnin-zabbix-datasource",
+              "uid": "eepnfj3d6hrlsb"
+            },
+            "functions": [],
+            "group": {
+              "filter": "Linux servers"
+            },
+            "host": {
+              "filter": "dtb2pgsql001p.sicredi.net"
+            },
+            "item": {
+              "filter": "patroni.service: Active time"
+            },
+            "itemTag": {
+              "filter": ""
+            },
+            "macro": {
+              "filter": ""
+            },
+            "options": {
+              "count": true,
+              "disableDataAlignment": false,
+              "minSeverity": 3,
+              "showDisabledItems": false,
+              "skipEmptyValues": false,
+              "useTrends": "default",
+              "useZabbixValueMapping": false
+            },
+            "proxy": {
+              "filter": ""
+            },
+            "queryType": "0",
+            "refId": "A",
+            "resultFormat": "time_series",
+            "schema": 12,
+            "table": {
+              "skipEmptyValues": false
+            },
+            "tags": {
+              "filter": ""
+            },
+            "textFilter": "",
+            "trigger": {
+              "filter": ""
+            },
+            "triggers": {
+              "acknowledged": 2
+            }
+          }
+        ],
+        "title": "Patroni Uptime dtb2pgsql001p",
         "type": "stat"
       },
       {
         "collapsed": false,
+        "datasource": {
+          "type": "datasource",
+          "uid": "grafana"
+        },
         "gridPos": {
           "h": 1,
           "w": 24,
           "x": 0,
-          "y": 3
+          "y": 6
         },
         "id": 12,
         "panels": [],
+        "targets": [
+          {
+            "datasource": {
+              "type": "datasource",
+              "uid": "grafana"
+            },
+            "refId": "A"
+          }
+        ],
         "title": "PostgreSQL Monitoring",
         "type": "row"
       },
@@ -688,7 +1369,6 @@
               "axisLabel": "",
               "axisPlacement": "auto",
               "barAlignment": 0,
-              "barWidthFactor": 0.6,
               "drawStyle": "line",
               "fillOpacity": 0,
               "gradientMode": "none",
@@ -719,7 +1399,8 @@
               "mode": "absolute",
               "steps": [
                 {
-                  "color": "green"
+                  "color": "green",
+                  "value": null
                 },
                 {
                   "color": "red",
@@ -731,10 +1412,10 @@
           "overrides": []
         },
         "gridPos": {
-          "h": 9,
-          "w": 24,
+          "h": 8,
+          "w": 18,
           "x": 0,
-          "y": 4
+          "y": 7
         },
         "id": 2,
         "options": {
@@ -750,12 +1431,10 @@
             "sortDesc": true
           },
           "tooltip": {
-            "hideZeros": false,
             "mode": "single",
             "sort": "none"
           }
         },
-        "pluginVersion": "12.0.2",
         "targets": [
           {
             "application": {
@@ -766,7 +1445,6 @@
               "type": "alexanderzobnin-zabbix-datasource",
               "uid": "eepnfj3d6hrlsb"
             },
-            "evaltype": "0",
             "functions": [
               {
                 "$$hashKey": "object:207",
@@ -791,7 +1469,7 @@
               "filter": "Linux servers"
             },
             "host": {
-              "filter": "dtb1mzabbix001p"
+              "filter": "/dtb[1-2]pgsql001p.sicredi.net/"
             },
             "item": {
               "filter": "/Connections sum: .*/"
@@ -853,7 +1531,6 @@
               "axisLabel": "",
               "axisPlacement": "auto",
               "barAlignment": 0,
-              "barWidthFactor": 0.6,
               "drawStyle": "line",
               "fillOpacity": 0,
               "gradientMode": "none",
@@ -884,7 +1561,166 @@
               "mode": "absolute",
               "steps": [
                 {
-                  "color": "green"
+                  "color": "green",
+                  "value": null
+                },
+                {
+                  "color": "red",
+                  "value": 80
+                }
+              ]
+            },
+            "unit": "s"
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 8,
+          "w": 6,
+          "x": 18,
+          "y": 7
+        },
+        "id": 25,
+        "options": {
+          "legend": {
+            "calcs": [],
+            "displayMode": "list",
+            "placement": "bottom",
+            "showLegend": true
+          },
+          "tooltip": {
+            "mode": "single",
+            "sort": "none"
+          }
+        },
+        "targets": [
+          {
+            "application": {
+              "filter": ""
+            },
+            "countTriggersBy": "",
+            "datasource": {
+              "type": "alexanderzobnin-zabbix-datasource",
+              "uid": "eepnfj3d6hrlsb"
+            },
+            "functions": [
+              {
+                "added": true,
+                "def": {
+                  "category": "Alias",
+                  "defaultParams": [],
+                  "name": "setAliasByRegex",
+                  "params": [
+                    {
+                      "name": "aliasByRegex",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "params": [
+                  "Application pg_dtb[0-9]pgsql001p.*"
+                ],
+                "text": "setAliasByRegex()"
+              }
+            ],
+            "group": {
+              "filter": "Linux servers"
+            },
+            "host": {
+              "filter": "/dtb[0-9]pgsql001p.sicredi.net/"
+            },
+            "item": {
+              "filter": "/Application pg_dtb[0-9]pgsql001p.*/"
+            },
+            "itemTag": {
+              "filter": ""
+            },
+            "macro": {
+              "filter": ""
+            },
+            "options": {
+              "count": true,
+              "disableDataAlignment": false,
+              "minSeverity": 3,
+              "showDisabledItems": false,
+              "skipEmptyValues": false,
+              "useTrends": "default",
+              "useZabbixValueMapping": false
+            },
+            "proxy": {
+              "filter": ""
+            },
+            "queryType": "0",
+            "refId": "A",
+            "resultFormat": "time_series",
+            "schema": 12,
+            "table": {
+              "skipEmptyValues": false
+            },
+            "tags": {
+              "filter": ""
+            },
+            "textFilter": "",
+            "trigger": {
+              "filter": ""
+            },
+            "triggers": {
+              "acknowledged": 2
+            }
+          }
+        ],
+        "title": "Lag Replication",
+        "type": "timeseries"
+      },
+      {
+        "datasource": {
+          "type": "alexanderzobnin-zabbix-datasource",
+          "uid": "eepnfj3d6hrlsb"
+        },
+        "fieldConfig": {
+          "defaults": {
+            "color": {
+              "mode": "palette-classic"
+            },
+            "custom": {
+              "axisBorderShow": false,
+              "axisCenteredZero": false,
+              "axisColorMode": "text",
+              "axisLabel": "",
+              "axisPlacement": "auto",
+              "barAlignment": 0,
+              "drawStyle": "line",
+              "fillOpacity": 0,
+              "gradientMode": "none",
+              "hideFrom": {
+                "legend": false,
+                "tooltip": false,
+                "viz": false
+              },
+              "insertNulls": false,
+              "lineInterpolation": "linear",
+              "lineWidth": 1,
+              "pointSize": 5,
+              "scaleDistribution": {
+                "type": "linear"
+              },
+              "showPoints": "auto",
+              "spanNulls": false,
+              "stacking": {
+                "group": "A",
+                "mode": "none"
+              },
+              "thresholdsStyle": {
+                "mode": "off"
+              }
+            },
+            "mappings": [],
+            "thresholds": {
+              "mode": "absolute",
+              "steps": [
+                {
+                  "color": "green",
+                  "value": null
                 },
                 {
                   "color": "red",
@@ -900,7 +1736,7 @@
           "h": 10,
           "w": 6,
           "x": 0,
-          "y": 13
+          "y": 15
         },
         "id": 23,
         "options": {
@@ -913,12 +1749,10 @@
             "showLegend": true
           },
           "tooltip": {
-            "hideZeros": false,
             "mode": "single",
             "sort": "none"
           }
         },
-        "pluginVersion": "12.0.2",
         "targets": [
           {
             "application": {
@@ -929,7 +1763,6 @@
               "type": "alexanderzobnin-zabbix-datasource",
               "uid": "eepnfj3d6hrlsb"
             },
-            "evaltype": "0",
             "functions": [
               {
                 "$$hashKey": "object:120",
@@ -954,7 +1787,7 @@
               "filter": "Linux servers"
             },
             "host": {
-              "filter": "$host"
+              "filter": "/dtb[1-2]pgsql001p.sicredi.net/"
             },
             "item": {
               "filter": "/DB $db: Tuples returned per second/"
@@ -1016,7 +1849,6 @@
               "axisLabel": "",
               "axisPlacement": "auto",
               "barAlignment": 0,
-              "barWidthFactor": 0.6,
               "drawStyle": "line",
               "fillOpacity": 0,
               "gradientMode": "none",
@@ -1047,7 +1879,8 @@
               "mode": "absolute",
               "steps": [
                 {
-                  "color": "green"
+                  "color": "green",
+                  "value": null
                 },
                 {
                   "color": "red",
@@ -1062,7 +1895,7 @@
           "h": 10,
           "w": 6,
           "x": 6,
-          "y": 13
+          "y": 15
         },
         "id": 26,
         "options": {
@@ -1075,12 +1908,10 @@
             "showLegend": true
           },
           "tooltip": {
-            "hideZeros": false,
             "mode": "single",
             "sort": "none"
           }
         },
-        "pluginVersion": "12.0.2",
         "targets": [
           {
             "application": {
@@ -1177,7 +2008,6 @@
               "axisLabel": "",
               "axisPlacement": "auto",
               "barAlignment": 0,
-              "barWidthFactor": 0.6,
               "drawStyle": "line",
               "fillOpacity": 0,
               "gradientMode": "none",
@@ -1208,7 +2038,8 @@
               "mode": "absolute",
               "steps": [
                 {
-                  "color": "green"
+                  "color": "green",
+                  "value": null
                 },
                 {
                   "color": "red",
@@ -1223,7 +2054,7 @@
           "h": 10,
           "w": 6,
           "x": 12,
-          "y": 13
+          "y": 15
         },
         "id": 24,
         "options": {
@@ -1236,12 +2067,10 @@
             "showLegend": true
           },
           "tooltip": {
-            "hideZeros": false,
             "mode": "single",
             "sort": "none"
           }
         },
-        "pluginVersion": "12.0.2",
         "targets": [
           {
             "application": {
@@ -1338,7 +2167,6 @@
               "axisLabel": "",
               "axisPlacement": "auto",
               "barAlignment": 0,
-              "barWidthFactor": 0.6,
               "drawStyle": "line",
               "fillOpacity": 0,
               "gradientMode": "none",
@@ -1369,7 +2197,8 @@
               "mode": "absolute",
               "steps": [
                 {
-                  "color": "green"
+                  "color": "green",
+                  "value": null
                 },
                 {
                   "color": "red",
@@ -1384,7 +2213,7 @@
           "h": 10,
           "w": 6,
           "x": 18,
-          "y": 13
+          "y": 15
         },
         "id": 51,
         "options": {
@@ -1397,12 +2226,10 @@
             "showLegend": true
           },
           "tooltip": {
-            "hideZeros": false,
             "mode": "single",
             "sort": "none"
           }
         },
-        "pluginVersion": "12.0.2",
         "targets": [
           {
             "application": {
@@ -1413,7 +2240,6 @@
               "type": "alexanderzobnin-zabbix-datasource",
               "uid": "eepnfj3d6hrlsb"
             },
-            "evaltype": "0",
             "functions": [
               {
                 "$$hashKey": "object:79",
@@ -1500,7 +2326,6 @@
               "axisLabel": "",
               "axisPlacement": "auto",
               "barAlignment": 0,
-              "barWidthFactor": 0.6,
               "drawStyle": "line",
               "fillOpacity": 0,
               "gradientMode": "none",
@@ -1546,7 +2371,7 @@
           "h": 9,
           "w": 6,
           "x": 0,
-          "y": 23
+          "y": 25
         },
         "id": 6,
         "options": {
@@ -1557,12 +2382,10 @@
             "showLegend": true
           },
           "tooltip": {
-            "hideZeros": false,
             "mode": "single",
             "sort": "none"
           }
         },
-        "pluginVersion": "12.0.2",
         "targets": [
           {
             "application": {
@@ -1573,7 +2396,6 @@
               "type": "alexanderzobnin-zabbix-datasource",
               "uid": "eepnfj3d6hrlsb"
             },
-            "evaltype": "0",
             "functions": [],
             "group": {
               "filter": "Linux servers"
@@ -1641,7 +2463,6 @@
               "axisLabel": "",
               "axisPlacement": "auto",
               "barAlignment": 0,
-              "barWidthFactor": 0.6,
               "drawStyle": "line",
               "fillOpacity": 0,
               "gradientMode": "none",
@@ -1719,7 +2540,7 @@
           "h": 9,
           "w": 6,
           "x": 6,
-          "y": 23
+          "y": 25
         },
         "id": 8,
         "options": {
@@ -1730,12 +2551,10 @@
             "showLegend": true
           },
           "tooltip": {
-            "hideZeros": false,
             "mode": "single",
             "sort": "none"
           }
         },
-        "pluginVersion": "12.0.2",
         "targets": [
           {
             "application": {
@@ -1813,7 +2632,6 @@
               "axisLabel": "",
               "axisPlacement": "auto",
               "barAlignment": 0,
-              "barWidthFactor": 0.6,
               "drawStyle": "line",
               "fillOpacity": 0,
               "gradientMode": "none",
@@ -1890,7 +2708,7 @@
           "h": 9,
           "w": 6,
           "x": 12,
-          "y": 23
+          "y": 25
         },
         "id": 10,
         "options": {
@@ -1901,12 +2719,10 @@
             "showLegend": true
           },
           "tooltip": {
-            "hideZeros": false,
             "mode": "single",
             "sort": "none"
           }
         },
-        "pluginVersion": "12.0.2",
         "targets": [
           {
             "application": {
@@ -1917,7 +2733,6 @@
               "type": "alexanderzobnin-zabbix-datasource",
               "uid": "eepnfj3d6hrlsb"
             },
-            "evaltype": "0",
             "functions": [],
             "group": {
               "filter": "Linux servers"
@@ -1926,7 +2741,7 @@
               "filter": "$host"
             },
             "item": {
-              "filter": "/DB $db: Num of locks total/"
+              "filter": "/DB $db: Num of total locks/"
             },
             "itemTag": {
               "filter": ""
@@ -1985,7 +2800,6 @@
               "axisLabel": "",
               "axisPlacement": "auto",
               "barAlignment": 0,
-              "barWidthFactor": 0.6,
               "drawStyle": "line",
               "fillOpacity": 0,
               "gradientMode": "none",
@@ -2032,7 +2846,7 @@
           "h": 9,
           "w": 6,
           "x": 18,
-          "y": 23
+          "y": 25
         },
         "id": 22,
         "options": {
@@ -2043,12 +2857,10 @@
             "showLegend": true
           },
           "tooltip": {
-            "hideZeros": false,
             "mode": "single",
             "sort": "none"
           }
         },
-        "pluginVersion": "12.0.2",
         "targets": [
           {
             "application": {
@@ -2111,14 +2923,331 @@
       },
       {
         "collapsed": false,
+        "datasource": {
+          "type": "datasource",
+          "uid": "grafana"
+        },
         "gridPos": {
           "h": 1,
           "w": 24,
           "x": 0,
-          "y": 32
+          "y": 34
+        },
+        "id": 44,
+        "panels": [],
+        "targets": [
+          {
+            "datasource": {
+              "type": "datasource",
+              "uid": "grafana"
+            },
+            "refId": "A"
+          }
+        ],
+        "title": "Haproxy Monitoring",
+        "type": "row"
+      },
+      {
+        "datasource": {
+          "type": "alexanderzobnin-zabbix-datasource",
+          "uid": "eepnfj3d6hrlsb"
+        },
+        "fieldConfig": {
+          "defaults": {
+            "color": {
+              "mode": "palette-classic"
+            },
+            "custom": {
+              "axisBorderShow": false,
+              "axisCenteredZero": false,
+              "axisColorMode": "text",
+              "axisLabel": "",
+              "axisPlacement": "auto",
+              "barAlignment": 0,
+              "drawStyle": "line",
+              "fillOpacity": 0,
+              "gradientMode": "none",
+              "hideFrom": {
+                "legend": false,
+                "tooltip": false,
+                "viz": false
+              },
+              "insertNulls": false,
+              "lineInterpolation": "linear",
+              "lineWidth": 1,
+              "pointSize": 5,
+              "scaleDistribution": {
+                "type": "linear"
+              },
+              "showPoints": "auto",
+              "spanNulls": false,
+              "stacking": {
+                "group": "A",
+                "mode": "none"
+              },
+              "thresholdsStyle": {
+                "mode": "off"
+              }
+            },
+            "mappings": [],
+            "thresholds": {
+              "mode": "absolute",
+              "steps": [
+                {
+                  "color": "green"
+                },
+                {
+                  "color": "red",
+                  "value": 80
+                }
+              ]
+            }
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 10,
+          "w": 12,
+          "x": 0,
+          "y": 35
+        },
+        "id": 46,
+        "options": {
+          "legend": {
+            "calcs": [
+              "lastNotNull"
+            ],
+            "displayMode": "table",
+            "placement": "right",
+            "showLegend": true
+          },
+          "tooltip": {
+            "mode": "single",
+            "sort": "none"
+          }
+        },
+        "targets": [
+          {
+            "application": {
+              "filter": ""
+            },
+            "countTriggersBy": "",
+            "datasource": {
+              "type": "alexanderzobnin-zabbix-datasource",
+              "uid": "eepnfj3d6hrlsb"
+            },
+            "functions": [],
+            "group": {
+              "filter": "Linux servers"
+            },
+            "host": {
+              "filter": "$host"
+            },
+            "item": {
+              "filter": "/HAProxy Backend postgres.* second/"
+            },
+            "itemTag": {
+              "filter": ""
+            },
+            "macro": {
+              "filter": ""
+            },
+            "options": {
+              "count": true,
+              "disableDataAlignment": false,
+              "minSeverity": 3,
+              "showDisabledItems": false,
+              "skipEmptyValues": false,
+              "useTrends": "default",
+              "useZabbixValueMapping": false
+            },
+            "proxy": {
+              "filter": ""
+            },
+            "queryType": "0",
+            "refId": "A",
+            "resultFormat": "time_series",
+            "schema": 12,
+            "table": {
+              "skipEmptyValues": false
+            },
+            "tags": {
+              "filter": ""
+            },
+            "textFilter": "",
+            "trigger": {
+              "filter": ""
+            },
+            "triggers": {
+              "acknowledged": 2
+            }
+          }
+        ],
+        "title": "HAProxy Backend connections per second",
+        "type": "timeseries"
+      },
+      {
+        "datasource": {
+          "type": "alexanderzobnin-zabbix-datasource",
+          "uid": "eepnfj3d6hrlsb"
+        },
+        "fieldConfig": {
+          "defaults": {
+            "color": {
+              "mode": "palette-classic"
+            },
+            "custom": {
+              "axisBorderShow": false,
+              "axisCenteredZero": false,
+              "axisColorMode": "text",
+              "axisLabel": "",
+              "axisPlacement": "auto",
+              "barAlignment": 0,
+              "drawStyle": "line",
+              "fillOpacity": 0,
+              "gradientMode": "none",
+              "hideFrom": {
+                "legend": false,
+                "tooltip": false,
+                "viz": false
+              },
+              "insertNulls": false,
+              "lineInterpolation": "linear",
+              "lineWidth": 1,
+              "pointSize": 5,
+              "scaleDistribution": {
+                "type": "linear"
+              },
+              "showPoints": "auto",
+              "spanNulls": false,
+              "stacking": {
+                "group": "A",
+                "mode": "none"
+              },
+              "thresholdsStyle": {
+                "mode": "off"
+              }
+            },
+            "mappings": [],
+            "thresholds": {
+              "mode": "absolute",
+              "steps": [
+                {
+                  "color": "green"
+                },
+                {
+                  "color": "red",
+                  "value": 80
+                }
+              ]
+            }
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 10,
+          "w": 12,
+          "x": 12,
+          "y": 35
+        },
+        "id": 47,
+        "options": {
+          "legend": {
+            "calcs": [
+              "lastNotNull"
+            ],
+            "displayMode": "table",
+            "placement": "right",
+            "showLegend": true
+          },
+          "tooltip": {
+            "mode": "single",
+            "sort": "none"
+          }
+        },
+        "targets": [
+          {
+            "application": {
+              "filter": ""
+            },
+            "countTriggersBy": "",
+            "datasource": {
+              "type": "alexanderzobnin-zabbix-datasource",
+              "uid": "eepnfj3d6hrlsb"
+            },
+            "functions": [],
+            "group": {
+              "filter": "Linux servers"
+            },
+            "host": {
+              "filter": "$host"
+            },
+            "item": {
+              "filter": "/HAProxy Backend postgres.*ime.*/"
+            },
+            "itemTag": {
+              "filter": ""
+            },
+            "macro": {
+              "filter": ""
+            },
+            "options": {
+              "count": true,
+              "disableDataAlignment": false,
+              "minSeverity": 3,
+              "showDisabledItems": false,
+              "skipEmptyValues": false,
+              "useTrends": "default",
+              "useZabbixValueMapping": false
+            },
+            "proxy": {
+              "filter": ""
+            },
+            "queryType": "0",
+            "refId": "A",
+            "resultFormat": "time_series",
+            "schema": 12,
+            "table": {
+              "skipEmptyValues": false
+            },
+            "tags": {
+              "filter": ""
+            },
+            "textFilter": "",
+            "trigger": {
+              "filter": ""
+            },
+            "triggers": {
+              "acknowledged": 2
+            }
+          }
+        ],
+        "title": "HAProxy Backend Time",
+        "type": "timeseries"
+      },
+      {
+        "collapsed": false,
+        "datasource": {
+          "type": "datasource",
+          "uid": "grafana"
+        },
+        "gridPos": {
+          "h": 1,
+          "w": 24,
+          "x": 0,
+          "y": 45
         },
         "id": 14,
         "panels": [],
+        "targets": [
+          {
+            "datasource": {
+              "type": "datasource",
+              "uid": "grafana"
+            },
+            "refId": "A"
+          }
+        ],
         "title": "Recursos SO",
         "type": "row"
       },
@@ -2164,7 +3293,7 @@
           "h": 3,
           "w": 8,
           "x": 0,
-          "y": 33
+          "y": 46
         },
         "id": 54,
         "options": {
@@ -2172,7 +3301,6 @@
           "graphMode": "none",
           "justifyMode": "auto",
           "orientation": "auto",
-          "percentChangeColorMode": "standard",
           "reduceOptions": {
             "calcs": [
               "lastNotNull"
@@ -2185,7 +3313,7 @@
           "textMode": "auto",
           "wideLayout": true
         },
-        "pluginVersion": "12.0.2",
+        "pluginVersion": "10.4.1",
         "targets": [
           {
             "application": {
@@ -2308,7 +3436,7 @@
           "h": 3,
           "w": 8,
           "x": 8,
-          "y": 33
+          "y": 46
         },
         "id": 55,
         "options": {
@@ -2316,7 +3444,6 @@
           "graphMode": "none",
           "justifyMode": "auto",
           "orientation": "auto",
-          "percentChangeColorMode": "standard",
           "reduceOptions": {
             "calcs": [
               "lastNotNull"
@@ -2329,7 +3456,7 @@
           "textMode": "auto",
           "wideLayout": true
         },
-        "pluginVersion": "12.0.2",
+        "pluginVersion": "10.4.1",
         "targets": [
           {
             "application": {
@@ -2452,7 +3579,7 @@
           "h": 3,
           "w": 8,
           "x": 16,
-          "y": 33
+          "y": 46
         },
         "id": 56,
         "options": {
@@ -2460,7 +3587,6 @@
           "graphMode": "none",
           "justifyMode": "auto",
           "orientation": "auto",
-          "percentChangeColorMode": "standard",
           "reduceOptions": {
             "calcs": [
               "lastNotNull"
@@ -2473,7 +3599,7 @@
           "textMode": "auto",
           "wideLayout": true
         },
-        "pluginVersion": "12.0.2",
+        "pluginVersion": "10.4.1",
         "targets": [
           {
             "application": {
@@ -2485,7 +3611,26 @@
               "uid": "eepnfj3d6hrlsb"
             },
             "evaltype": "0",
-            "functions": [],
+            "functions": [
+              {
+                "added": true,
+                "def": {
+                  "category": "Alias",
+                  "defaultParams": [],
+                  "name": "setAliasByRegex",
+                  "params": [
+                    {
+                      "name": "aliasByRegex",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "params": [
+                  "dtb.pgsql001p.sicredi.net"
+                ],
+                "text": "setAliasByRegex()"
+              }
+            ],
             "group": {
               "filter": "Linux servers"
             },
@@ -2493,7 +3638,7 @@
               "filter": "$host"
             },
             "item": {
-              "filter": "FS [/postgresql]: Space: Total"
+              "filter": "/postgre/data: Total space"
             },
             "itemTag": {
               "filter": ""
@@ -2553,7 +3698,6 @@
               "axisLabel": "",
               "axisPlacement": "auto",
               "barAlignment": 0,
-              "barWidthFactor": 0.6,
               "drawStyle": "line",
               "fillOpacity": 0,
               "gradientMode": "none",
@@ -2601,7 +3745,7 @@
           "h": 8,
           "w": 4,
           "x": 0,
-          "y": 36
+          "y": 49
         },
         "id": 16,
         "options": {
@@ -2612,12 +3756,11 @@
             "showLegend": true
           },
           "tooltip": {
-            "hideZeros": false,
             "mode": "single",
             "sort": "none"
           }
         },
-        "pluginVersion": "12.0.2",
+        "pluginVersion": "8.1.8",
         "targets": [
           {
             "application": {
@@ -2696,7 +3839,6 @@
               "axisLabel": "",
               "axisPlacement": "auto",
               "barAlignment": 0,
-              "barWidthFactor": 0.6,
               "drawStyle": "line",
               "fillOpacity": 0,
               "gradientMode": "none",
@@ -2744,7 +3886,7 @@
           "h": 8,
           "w": 4,
           "x": 4,
-          "y": 36
+          "y": 49
         },
         "id": 17,
         "options": {
@@ -2755,12 +3897,10 @@
             "showLegend": true
           },
           "tooltip": {
-            "hideZeros": false,
             "mode": "single",
             "sort": "none"
           }
         },
-        "pluginVersion": "12.0.2",
         "targets": [
           {
             "application": {
@@ -2895,7 +4035,6 @@
               "axisLabel": "",
               "axisPlacement": "auto",
               "barAlignment": 0,
-              "barWidthFactor": 0.6,
               "drawStyle": "line",
               "fillOpacity": 0,
               "gradientMode": "none",
@@ -2942,7 +4081,7 @@
           "h": 8,
           "w": 4,
           "x": 8,
-          "y": 36
+          "y": 49
         },
         "id": 18,
         "options": {
@@ -2953,12 +4092,10 @@
             "showLegend": true
           },
           "tooltip": {
-            "hideZeros": false,
             "mode": "single",
             "sort": "none"
           }
         },
-        "pluginVersion": "12.0.2",
         "targets": [
           {
             "application": {
@@ -2969,7 +4106,6 @@
               "type": "alexanderzobnin-zabbix-datasource",
               "uid": "eepnfj3d6hrlsb"
             },
-            "evaltype": "0",
             "functions": [],
             "group": {
               "filter": "Linux servers"
@@ -2978,7 +4114,7 @@
               "filter": "$host"
             },
             "item": {
-              "filter": "Interface eth0: Bits received"
+              "filter": "Interface ens192: Bits received"
             },
             "itemTag": {
               "filter": ""
@@ -3025,7 +4161,6 @@
               "type": "alexanderzobnin-zabbix-datasource",
               "uid": "eepnfj3d6hrlsb"
             },
-            "evaltype": "0",
             "functions": [],
             "group": {
               "filter": "Linux servers"
@@ -3035,7 +4170,7 @@
               "filter": "$host"
             },
             "item": {
-              "filter": "Interface eth0: Bits sent"
+              "filter": "Interface ens192: Bits sent"
             },
             "itemTag": {
               "filter": ""
@@ -3095,7 +4230,6 @@
               "axisLabel": "",
               "axisPlacement": "auto",
               "barAlignment": 0,
-              "barWidthFactor": 0.6,
               "drawStyle": "line",
               "fillOpacity": 0,
               "gradientMode": "none",
@@ -3144,7 +4278,7 @@
           "h": 8,
           "w": 4,
           "x": 12,
-          "y": 36
+          "y": 49
         },
         "id": 19,
         "options": {
@@ -3155,12 +4289,10 @@
             "showLegend": true
           },
           "tooltip": {
-            "hideZeros": false,
             "mode": "single",
             "sort": "none"
           }
         },
-        "pluginVersion": "12.0.2",
         "targets": [
           {
             "application": {
@@ -3252,7 +4384,6 @@
               "axisLabel": "",
               "axisPlacement": "auto",
               "barAlignment": 0,
-              "barWidthFactor": 0.6,
               "drawStyle": "line",
               "fillOpacity": 0,
               "gradientMode": "none",
@@ -3301,7 +4432,7 @@
           "h": 8,
           "w": 4,
           "x": 16,
-          "y": 36
+          "y": 49
         },
         "id": 20,
         "options": {
@@ -3312,23 +4443,19 @@
             "showLegend": true
           },
           "tooltip": {
-            "hideZeros": false,
             "mode": "single",
             "sort": "none"
           }
         },
-        "pluginVersion": "12.0.2",
         "targets": [
           {
             "application": {
               "filter": ""
             },
-            "countTriggersBy": "",
             "datasource": {
               "type": "alexanderzobnin-zabbix-datasource",
               "uid": "eepnfj3d6hrlsb"
             },
-            "evaltype": "0",
             "functions": [],
             "group": {
               "filter": "Linux servers"
@@ -3337,21 +4464,15 @@
               "filter": "$host"
             },
             "item": {
-              "filter": "FS [/]: Space: Used, in %"
+              "filter": "/\\/.* Space utilization/"
             },
             "itemTag": {
               "filter": ""
             },
-            "macro": {
-              "filter": ""
-            },
             "options": {
-              "count": true,
               "disableDataAlignment": false,
-              "minSeverity": 3,
               "showDisabledItems": false,
               "skipEmptyValues": false,
-              "useTrends": "default",
               "useZabbixValueMapping": false
             },
             "proxy": {
@@ -3360,76 +4481,19 @@
             "queryType": "0",
             "refId": "A",
             "resultFormat": "time_series",
-            "schema": 12,
             "table": {
               "skipEmptyValues": false
             },
             "tags": {
               "filter": ""
             },
-            "textFilter": "",
             "trigger": {
               "filter": ""
             },
             "triggers": {
-              "acknowledged": 2
-            }
-          },
-          {
-            "application": {
-              "filter": ""
-            },
-            "countTriggersBy": "",
-            "datasource": {
-              "type": "alexanderzobnin-zabbix-datasource",
-              "uid": "eepnfj3d6hrlsb"
-            },
-            "evaltype": "0",
-            "functions": [],
-            "group": {
-              "filter": "Linux servers"
-            },
-            "hide": false,
-            "host": {
-              "filter": "$host"
-            },
-            "item": {
-              "filter": "FS [/postgresql]: Space: Used, in %"
-            },
-            "itemTag": {
-              "filter": ""
-            },
-            "macro": {
-              "filter": ""
-            },
-            "options": {
+              "acknowledged": 2,
               "count": true,
-              "disableDataAlignment": false,
-              "minSeverity": 3,
-              "showDisabledItems": false,
-              "skipEmptyValues": false,
-              "useTrends": "default",
-              "useZabbixValueMapping": false
-            },
-            "proxy": {
-              "filter": ""
-            },
-            "queryType": "0",
-            "refId": "B",
-            "resultFormat": "time_series",
-            "schema": 12,
-            "table": {
-              "skipEmptyValues": false
-            },
-            "tags": {
-              "filter": ""
-            },
-            "textFilter": "",
-            "trigger": {
-              "filter": ""
-            },
-            "triggers": {
-              "acknowledged": 2
+              "minSeverity": 3
             }
           }
         ],
@@ -3454,7 +4518,6 @@
               "axisLabel": "",
               "axisPlacement": "auto",
               "barAlignment": 0,
-              "barWidthFactor": 0.6,
               "drawStyle": "line",
               "fillOpacity": 0,
               "gradientMode": "none",
@@ -3501,7 +4564,7 @@
           "h": 8,
           "w": 4,
           "x": 20,
-          "y": 36
+          "y": 49
         },
         "id": 21,
         "options": {
@@ -3512,12 +4575,10 @@
             "showLegend": true
           },
           "tooltip": {
-            "hideZeros": false,
             "mode": "single",
             "sort": "none"
           }
         },
-        "pluginVersion": "12.0.2",
         "targets": [
           {
             "application": {
@@ -3621,14 +4682,14 @@
         "type": "timeseries"
       }
     ],
-    "preload": false,
     "refresh": "1m",
-    "schemaVersion": 41,
+    "schemaVersion": 39,
     "tags": [],
     "templating": {
       "list": [
         {
           "current": {
+            "selected": false,
             "text": "All",
             "value": "$__all"
           },
@@ -3636,13 +4697,15 @@
             "type": "alexanderzobnin-zabbix-datasource",
             "uid": "eepnfj3d6hrlsb"
           },
-          "definition": "",
+          "definition": "Zabbix - host",
+          "hide": 0,
           "includeAll": true,
+          "multi": false,
           "name": "host",
           "options": [],
           "query": {
             "application": "",
-            "group": "/Linux.*/",
+            "group": "/Postgresql.*/",
             "host": "/.*/",
             "item": "",
             "itemTag": "",
@@ -3650,10 +4713,13 @@
           },
           "refresh": 1,
           "regex": "/dtb[1-2].*/",
+          "skipUrlSync": false,
+          "sort": 0,
           "type": "query"
         },
         {
           "current": {
+            "selected": false,
             "text": "All",
             "value": "$__all"
           },
@@ -3662,8 +4728,10 @@
             "uid": "eepnfj3d6hrlsb"
           },
           "definition": "Zabbix - item",
+          "hide": 0,
           "includeAll": true,
           "label": "Database",
+          "multi": false,
           "name": "db",
           "options": [],
           "query": {
@@ -3676,6 +4744,8 @@
           },
           "refresh": 1,
           "regex": "/DB (.+): Database size/",
+          "skipUrlSync": false,
+          "sort": 0,
           "type": "query"
         }
       ]
@@ -3686,6 +4756,7 @@
     },
     "timepicker": {},
     "timezone": "",
-    "title": "Postgresql Cluster Monitoramento"
+    "title": "Postgresql Cluster Monitoramento",
+    "weekStart": ""
   }
 }

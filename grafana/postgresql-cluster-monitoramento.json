@@ -298,7 +298,7 @@
               "mode": "absolute",
               "steps": [
                 {
-                  "color": "green"
+                  "color": "dark-green"
                 }
               ]
             }
@@ -390,6 +390,147 @@
           }
         ],
         "title": "Postgresql systemd uptime",
+        "type": "stat"
+      },
+      {
+        "datasource": {
+          "type": "alexanderzobnin-zabbix-datasource",
+          "uid": "eepnfj3d6hrlsb"
+        },
+        "fieldConfig": {
+          "defaults": {
+            "color": {
+              "mode": "thresholds"
+            },
+            "mappings": [
+              {
+                "options": {
+                  "0": {
+                    "color": "text",
+                    "index": 6,
+                    "text": "Unknown"
+                  },
+                  "1": {
+                    "color": "dark-green",
+                    "index": 0,
+                    "text": "Active"
+                  },
+                  "2": {
+                    "color": "dark-purple",
+                    "index": 1,
+                    "text": "Reloading"
+                  },
+                  "3": {
+                    "color": "dark-orange",
+                    "index": 2,
+                    "text": "Inactive"
+                  },
+                  "4": {
+                    "color": "dark-red",
+                    "index": 3,
+                    "text": "Failed"
+                  },
+                  "5": {
+                    "color": "dark-blue",
+                    "index": 4,
+                    "text": "Activating"
+                  },
+                  "6": {
+                    "color": "semi-dark-orange",
+                    "index": 5,
+                    "text": "Deactivating"
+                  }
+                },
+                "type": "value"
+              }
+            ],
+            "thresholds": {
+              "mode": "absolute",
+              "steps": [
+                {
+                  "color": "green"
+                }
+              ]
+            }
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 3,
+          "w": 3,
+          "x": 9,
+          "y": 0
+        },
+        "id": 58,
+        "options": {
+          "colorMode": "value",
+          "graphMode": "area",
+          "justifyMode": "auto",
+          "orientation": "auto",
+          "percentChangeColorMode": "standard",
+          "reduceOptions": {
+            "calcs": [
+              "lastNotNull"
+            ],
+            "fields": "",
+            "values": false
+          },
+          "showPercentChange": false,
+          "textMode": "auto",
+          "wideLayout": true
+        },
+        "pluginVersion": "12.0.2",
+        "targets": [
+          {
+            "application": {
+              "filter": ""
+            },
+            "countTriggersBy": "",
+            "evaltype": "0",
+            "functions": [],
+            "group": {
+              "filter": "Linux servers"
+            },
+            "host": {
+              "filter": "dtb1mzabbix001p"
+            },
+            "item": {
+              "filter": "postgresql.service: Active state"
+            },
+            "itemTag": {
+              "filter": ""
+            },
+            "macro": {
+              "filter": ""
+            },
+            "options": {
+              "count": false,
+              "disableDataAlignment": false,
+              "showDisabledItems": false,
+              "skipEmptyValues": false,
+              "useTrends": "default",
+              "useZabbixValueMapping": false
+            },
+            "proxy": {
+              "filter": ""
+            },
+            "queryType": "0",
+            "refId": "A",
+            "resultFormat": "time_series",
+            "schema": 12,
+            "table": {
+              "skipEmptyValues": false
+            },
+            "tags": {
+              "filter": ""
+            },
+            "textFilter": "",
+            "trigger": {
+              "filter": ""
+            }
+          }
+        ],
+        "title": "Postgresql systemd status",
         "type": "stat"
       },
       {

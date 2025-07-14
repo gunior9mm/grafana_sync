@@ -89,7 +89,7 @@
               "filter": "Windows servers"
             },
             "host": {
-              "filter": "MEU-PC-48GB"
+              "filter": "DS1ADDS1P"
             },
             "item": {
               "filter": "System name"
@@ -194,7 +194,7 @@
               "filter": "Windows servers"
             },
             "host": {
-              "filter": "MEU-PC-48GB"
+              "filter": "DS1ADDS1P"
             },
             "item": {
               "filter": "Uptime"
@@ -301,7 +301,7 @@
               "filter": "Windows servers"
             },
             "host": {
-              "filter": "MEU-PC-48GB"
+              "filter": "DS1ADDS1P"
             },
             "item": {
               "filter": "CPU name"
@@ -405,7 +405,7 @@
               "filter": "Windows servers"
             },
             "host": {
-              "filter": "MEU-PC-48GB"
+              "filter": "DS1ADDS1P"
             },
             "item": {
               "filter": "Number of cores"
@@ -505,7 +505,7 @@
               "filter": "Windows servers"
             },
             "host": {
-              "filter": "MEU-PC-48GB"
+              "filter": "DS1ADDS1P"
             },
             "item": {
               "filter": "Total memory"
@@ -721,7 +721,7 @@
               "filter": "Windows servers"
             },
             "host": {
-              "filter": "MEU-PC-48GB"
+              "filter": "DS1ADDS1P"
             },
             "item": {
               "filter": "/FS .*: Space: Total/"
@@ -871,7 +871,7 @@
               "filter": "Windows servers"
             },
             "host": {
-              "filter": "MEU-PC-48GB"
+              "filter": "DS1ADDS1P"
             },
             "item": {
               "filter": "CPU utilization"
@@ -1008,7 +1008,7 @@
               "filter": "Windows servers"
             },
             "host": {
-              "filter": "MEU-PC-48GB"
+              "filter": "DS1ADDS1P"
             },
             "item": {
               "filter": "Memory utilization"
@@ -1158,7 +1158,7 @@
               "filter": "Windows servers"
             },
             "host": {
-              "filter": "MEU-PC-48GB"
+              "filter": "DS1ADDS1P"
             },
             "item": {
               "filter": "Interface Realtek PCIe GbE Family Controller(Ethernet): Bits received"
@@ -1211,7 +1211,7 @@
             },
             "hide": false,
             "host": {
-              "filter": "MEU-PC-48GB"
+              "filter": "DS1ADDS1P"
             },
             "item": {
               "filter": "Interface Realtek PCIe GbE Family Controller(Ethernet): Bits sent"
@@ -1348,7 +1348,7 @@
               "filter": "Windows servers"
             },
             "host": {
-              "filter": "MEU-PC-48GB"
+              "filter": "DS1ADDS1P"
             },
             "item": {
               "filter": "/FS .* Space: Used, in %/"
@@ -1486,7 +1486,7 @@
               "filter": "Windows servers"
             },
             "host": {
-              "filter": "MEU-PC-48GB"
+              "filter": "DS1ADDS1P"
             },
             "item": {
               "filter": "CPU temperature"
@@ -1624,7 +1624,7 @@
               "filter": "Windows servers"
             },
             "host": {
-              "filter": "MEU-PC-48GB"
+              "filter": "DS1ADDS1P"
             },
             "item": {
               "filter": "CPU power"
@@ -1907,7 +1907,7 @@
               "filter": "Windows servers"
             },
             "host": {
-              "filter": "MEU-PC-48GB"
+              "filter": "DS1ADDS1P"
             },
             "item": {
               "filter": "/.* Disk read rate/"
@@ -1960,7 +1960,7 @@
             },
             "hide": false,
             "host": {
-              "filter": "MEU-PC-48GB"
+              "filter": "DS1ADDS1P"
             },
             "item": {
               "filter": "/.* Disk write rate/"
@@ -2080,7 +2080,7 @@
               "filter": "Windows servers"
             },
             "host": {
-              "filter": "MEU-PC-48GB"
+              "filter": "DS1ADDS1P"
             },
             "item": {
               "filter": "GPU Name"
@@ -2184,7 +2184,7 @@
               "filter": "Windows servers"
             },
             "host": {
-              "filter": "MEU-PC-48GB"
+              "filter": "DS1ADDS1P"
             },
             "item": {
               "filter": "Driver version"
@@ -2284,7 +2284,7 @@
               "filter": "Windows servers"
             },
             "host": {
-              "filter": "MEU-PC-48GB"
+              "filter": "DS1ADDS1P"
             },
             "item": {
               "filter": "[NVIDIA GeForce RTX 3060]: FB memory, total"
@@ -2384,7 +2384,7 @@
               "filter": "Windows servers"
             },
             "host": {
-              "filter": "MEU-PC-48GB"
+              "filter": "DS1ADDS1P"
             },
             "item": {
               "filter": "[NVIDIA GeForce RTX 3060]: Fan speed"
@@ -2521,7 +2521,7 @@
               "filter": "Windows servers"
             },
             "host": {
-              "filter": "MEU-PC-48GB"
+              "filter": "DS1ADDS1P"
             },
             "item": {
               "filter": "[NVIDIA GeForce RTX 3060]: GPU utilization"
@@ -2658,7 +2658,7 @@
               "filter": "Windows servers"
             },
             "host": {
-              "filter": "MEU-PC-48GB"
+              "filter": "DS1ADDS1P"
             },
             "item": {
               "filter": "[NVIDIA GeForce RTX 3060]: Temperature"
@@ -2795,7 +2795,7 @@
               "filter": "Windows servers"
             },
             "host": {
-              "filter": "MEU-PC-48GB"
+              "filter": "DS1ADDS1P"
             },
             "item": {
               "filter": "[NVIDIA GeForce RTX 3060]: FB memory, used, perc"
@@ -2933,7 +2933,7 @@
               "filter": "Windows servers"
             },
             "host": {
-              "filter": "MEU-PC-48GB"
+              "filter": "DS1ADDS1P"
             },
             "item": {
               "filter": "[NVIDIA GeForce RTX 3060]: Power usage"

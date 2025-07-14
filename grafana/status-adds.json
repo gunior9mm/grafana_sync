@@ -1161,7 +1161,7 @@
               "filter": "DS1ADDS1P"
             },
             "item": {
-              "filter": "Interface Realtek PCIe GbE Family Controller(Ethernet): Bits received"
+              "filter": "Interface Microsoft Hyper-V Network Adapter(Ethernet): Bits received"
             },
             "itemTag": {
               "filter": ""
@@ -1214,7 +1214,7 @@
               "filter": "DS1ADDS1P"
             },
             "item": {
-              "filter": "Interface Realtek PCIe GbE Family Controller(Ethernet): Bits sent"
+              "filter": "Interface Microsoft Hyper-V Network Adapter(Ethernet): Bits sent"
             },
             "itemTag": {
               "filter": ""

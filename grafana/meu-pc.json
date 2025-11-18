@@ -1882,7 +1882,7 @@
             {
               "matcher": {
                 "id": "byRegexp",
-                "options": "/.* Disk write rate/"
+                "options": "/.* Disk read rate/"
               },
               "properties": [
                 {

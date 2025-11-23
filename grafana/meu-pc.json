@@ -77,7 +77,7 @@
           "textMode": "auto",
           "wideLayout": true
         },
-        "pluginVersion": "12.2.0",
+        "pluginVersion": "12.3.0",
         "targets": [
           {
             "application": {
@@ -179,7 +179,7 @@
           "textMode": "auto",
           "wideLayout": true
         },
-        "pluginVersion": "12.2.0",
+        "pluginVersion": "12.3.0",
         "targets": [
           {
             "application": {
@@ -291,7 +291,7 @@
           "textMode": "value",
           "wideLayout": true
         },
-        "pluginVersion": "12.2.0",
+        "pluginVersion": "12.3.0",
         "targets": [
           {
             "application": {
@@ -396,7 +396,7 @@
           "textMode": "auto",
           "wideLayout": true
         },
-        "pluginVersion": "12.2.0",
+        "pluginVersion": "12.3.0",
         "targets": [
           {
             "application": {
@@ -497,7 +497,7 @@
           "textMode": "auto",
           "wideLayout": true
         },
-        "pluginVersion": "12.2.0",
+        "pluginVersion": "12.3.0",
         "targets": [
           {
             "application": {
@@ -614,7 +614,7 @@
           "textMode": "auto",
           "wideLayout": true
         },
-        "pluginVersion": "12.2.0",
+        "pluginVersion": "12.3.0",
         "targets": [
           {
             "application": {
@@ -624,10 +624,10 @@
             "evaltype": "0",
             "functions": [],
             "group": {
-              "filter": "Zabbix servers"
+              "filter": "Routers"
             },
             "host": {
-              "filter": "Zabbix server"
+              "filter": "Router Claro"
             },
             "item": {
               "filter": "Status Internet"
@@ -715,7 +715,7 @@
           "textMode": "auto",
           "wideLayout": true
         },
-        "pluginVersion": "12.2.0",
+        "pluginVersion": "12.3.0",
         "targets": [
           {
             "application": {
@@ -863,7 +863,7 @@
             "sort": "none"
           }
         },
-        "pluginVersion": "12.2.0",
+        "pluginVersion": "12.3.0",
         "targets": [
           {
             "application": {
@@ -1002,7 +1002,7 @@
             "sort": "none"
           }
         },
-        "pluginVersion": "12.2.0",
+        "pluginVersion": "12.3.0",
         "targets": [
           {
             "application": {
@@ -1154,7 +1154,7 @@
             "sort": "none"
           }
         },
-        "pluginVersion": "12.2.0",
+        "pluginVersion": "12.3.0",
         "targets": [
           {
             "application": {
@@ -1346,7 +1346,7 @@
             "sort": "none"
           }
         },
-        "pluginVersion": "12.2.0",
+        "pluginVersion": "12.3.0",
         "targets": [
           {
             "application": {
@@ -1486,7 +1486,7 @@
             "sort": "none"
           }
         },
-        "pluginVersion": "12.2.0",
+        "pluginVersion": "12.3.0",
         "targets": [
           {
             "application": {
@@ -1626,7 +1626,7 @@
             "sort": "none"
           }
         },
-        "pluginVersion": "12.2.0",
+        "pluginVersion": "12.3.0",
         "targets": [
           {
             "application": {
@@ -1765,7 +1765,7 @@
             "sort": "none"
           }
         },
-        "pluginVersion": "12.2.0",
+        "pluginVersion": "12.3.0",
         "targets": [
           {
             "application": {
@@ -1775,10 +1775,10 @@
             "evaltype": "0",
             "functions": [],
             "group": {
-              "filter": "Zabbix servers"
+              "filter": "Routers"
             },
             "host": {
-              "filter": "Zabbix server"
+              "filter": "Router Claro"
             },
             "item": {
               "filter": "Latência Internet"
@@ -1913,7 +1913,7 @@
             "sort": "none"
           }
         },
-        "pluginVersion": "12.2.0",
+        "pluginVersion": "12.3.0",
         "targets": [
           {
             "application": {
@@ -2091,7 +2091,7 @@
           "textMode": "value",
           "wideLayout": true
         },
-        "pluginVersion": "12.2.0",
+        "pluginVersion": "12.3.0",
         "targets": [
           {
             "application": {
@@ -2199,7 +2199,7 @@
           "textMode": "auto",
           "wideLayout": true
         },
-        "pluginVersion": "12.2.0",
+        "pluginVersion": "12.3.0",
         "targets": [
           {
             "application": {
@@ -2300,7 +2300,7 @@
           "textMode": "auto",
           "wideLayout": true
         },
-        "pluginVersion": "12.2.0",
+        "pluginVersion": "12.3.0",
         "targets": [
           {
             "application": {
@@ -2401,7 +2401,7 @@
           "textMode": "auto",
           "wideLayout": true
         },
-        "pluginVersion": "12.2.0",
+        "pluginVersion": "12.3.0",
         "targets": [
           {
             "application": {
@@ -2536,7 +2536,7 @@
             "sort": "none"
           }
         },
-        "pluginVersion": "12.2.0",
+        "pluginVersion": "12.3.0",
         "targets": [
           {
             "application": {
@@ -2675,7 +2675,7 @@
             "sort": "none"
           }
         },
-        "pluginVersion": "12.2.0",
+        "pluginVersion": "12.3.0",
         "targets": [
           {
             "application": {
@@ -2814,7 +2814,7 @@
             "sort": "none"
           }
         },
-        "pluginVersion": "12.2.0",
+        "pluginVersion": "12.3.0",
         "targets": [
           {
             "application": {
@@ -2954,7 +2954,7 @@
             "sort": "none"
           }
         },
-        "pluginVersion": "12.2.0",
+        "pluginVersion": "12.3.0",
         "targets": [
           {
             "application": {

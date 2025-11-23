@@ -78,7 +78,7 @@
         },
         "gridPos": {
           "h": 4,
-          "w": 6,
+          "w": 5,
           "x": 0,
           "y": 0
         },
@@ -210,8 +210,8 @@
         },
         "gridPos": {
           "h": 4,
-          "w": 6,
-          "x": 6,
+          "w": 5,
+          "x": 5,
           "y": 0
         },
         "id": 2,
@@ -342,8 +342,8 @@
         },
         "gridPos": {
           "h": 4,
-          "w": 6,
-          "x": 12,
+          "w": 5,
+          "x": 10,
           "y": 0
         },
         "id": 3,
@@ -474,8 +474,8 @@
         },
         "gridPos": {
           "h": 4,
-          "w": 6,
-          "x": 18,
+          "w": 9,
+          "x": 15,
           "y": 0
         },
         "id": 5,
@@ -617,7 +617,7 @@
         },
         "gridPos": {
           "h": 9,
-          "w": 6,
+          "w": 5,
           "x": 0,
           "y": 4
         },
@@ -752,8 +752,8 @@
         },
         "gridPos": {
           "h": 9,
-          "w": 6,
-          "x": 6,
+          "w": 5,
+          "x": 5,
           "y": 4
         },
         "id": 6,
@@ -887,8 +887,8 @@
         },
         "gridPos": {
           "h": 9,
-          "w": 6,
-          "x": 12,
+          "w": 5,
+          "x": 10,
           "y": 4
         },
         "id": 7,
@@ -1022,8 +1022,8 @@
         },
         "gridPos": {
           "h": 9,
-          "w": 6,
-          "x": 18,
+          "w": 5,
+          "x": 15,
           "y": 4
         },
         "id": 8,
@@ -1135,6 +1135,141 @@
                 "mode": "none"
               },
               "thresholdsStyle": {
+                "mode": "off"
+              }
+            },
+            "mappings": [],
+            "thresholds": {
+              "mode": "absolute",
+              "steps": [
+                {
+                  "color": "green",
+                  "value": 0
+                },
+                {
+                  "color": "red",
+                  "value": 80
+                }
+              ]
+            }
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 9,
+          "w": 4,
+          "x": 20,
+          "y": 4
+        },
+        "id": 13,
+        "options": {
+          "legend": {
+            "calcs": [],
+            "displayMode": "list",
+            "placement": "bottom",
+            "showLegend": true
+          },
+          "tooltip": {
+            "hideZeros": false,
+            "mode": "single",
+            "sort": "none"
+          }
+        },
+        "pluginVersion": "12.3.0",
+        "targets": [
+          {
+            "application": {
+              "filter": ""
+            },
+            "countTriggersBy": "",
+            "evaltype": "0",
+            "functions": [],
+            "group": {
+              "filter": "Routers"
+            },
+            "host": {
+              "filter": "Router Claro"
+            },
+            "item": {
+              "filter": "SpeedTest Download"
+            },
+            "itemTag": {
+              "filter": ""
+            },
+            "macro": {
+              "filter": ""
+            },
+            "options": {
+              "count": false,
+              "disableDataAlignment": false,
+              "showDisabledItems": false,
+              "skipEmptyValues": false,
+              "useTrends": "default",
+              "useZabbixValueMapping": false
+            },
+            "proxy": {
+              "filter": ""
+            },
+            "queryType": "0",
+            "refId": "A",
+            "resultFormat": "time_series",
+            "schema": 12,
+            "table": {
+              "skipEmptyValues": false
+            },
+            "tags": {
+              "filter": ""
+            },
+            "textFilter": "",
+            "trigger": {
+              "filter": ""
+            }
+          }
+        ],
+        "title": "Download",
+        "type": "timeseries"
+      },
+      {
+        "datasource": {
+          "type": "alexanderzobnin-zabbix-datasource",
+          "uid": "eepnfj3d6hrlsb"
+        },
+        "fieldConfig": {
+          "defaults": {
+            "color": {
+              "mode": "palette-classic"
+            },
+            "custom": {
+              "axisBorderShow": false,
+              "axisCenteredZero": false,
+              "axisColorMode": "text",
+              "axisLabel": "",
+              "axisPlacement": "auto",
+              "barAlignment": 0,
+              "barWidthFactor": 0.6,
+              "drawStyle": "line",
+              "fillOpacity": 0,
+              "gradientMode": "none",
+              "hideFrom": {
+                "legend": false,
+                "tooltip": false,
+                "viz": false
+              },
+              "insertNulls": false,
+              "lineInterpolation": "linear",
+              "lineWidth": 1,
+              "pointSize": 5,
+              "scaleDistribution": {
+                "type": "linear"
+              },
+              "showPoints": "auto",
+              "showValues": false,
+              "spanNulls": false,
+              "stacking": {
+                "group": "A",
+                "mode": "none"
+              },
+              "thresholdsStyle": {
                 "mode": "dashed"
               }
             },
@@ -1157,7 +1292,7 @@
         },
         "gridPos": {
           "h": 9,
-          "w": 6,
+          "w": 5,
           "x": 0,
           "y": 13
         },
@@ -1292,8 +1427,8 @@
         },
         "gridPos": {
           "h": 9,
-          "w": 6,
-          "x": 6,
+          "w": 5,
+          "x": 5,
           "y": 13
         },
         "id": 10,
@@ -1427,8 +1562,8 @@
         },
         "gridPos": {
           "h": 9,
-          "w": 6,
-          "x": 12,
+          "w": 5,
+          "x": 10,
           "y": 13
         },
         "id": 11,
@@ -1562,8 +1697,8 @@
         },
         "gridPos": {
           "h": 9,
-          "w": 6,
-          "x": 18,
+          "w": 5,
+          "x": 15,
           "y": 13
         },
         "id": 12,
@@ -1632,6 +1767,141 @@
           }
         ],
         "title": "Latência Internet",
+        "type": "timeseries"
+      },
+      {
+        "datasource": {
+          "type": "alexanderzobnin-zabbix-datasource",
+          "uid": "eepnfj3d6hrlsb"
+        },
+        "fieldConfig": {
+          "defaults": {
+            "color": {
+              "mode": "palette-classic"
+            },
+            "custom": {
+              "axisBorderShow": false,
+              "axisCenteredZero": false,
+              "axisColorMode": "text",
+              "axisLabel": "",
+              "axisPlacement": "auto",
+              "barAlignment": 0,
+              "barWidthFactor": 0.6,
+              "drawStyle": "line",
+              "fillOpacity": 0,
+              "gradientMode": "none",
+              "hideFrom": {
+                "legend": false,
+                "tooltip": false,
+                "viz": false
+              },
+              "insertNulls": false,
+              "lineInterpolation": "linear",
+              "lineWidth": 1,
+              "pointSize": 5,
+              "scaleDistribution": {
+                "type": "linear"
+              },
+              "showPoints": "auto",
+              "showValues": false,
+              "spanNulls": false,
+              "stacking": {
+                "group": "A",
+                "mode": "none"
+              },
+              "thresholdsStyle": {
+                "mode": "off"
+              }
+            },
+            "mappings": [],
+            "thresholds": {
+              "mode": "absolute",
+              "steps": [
+                {
+                  "color": "green",
+                  "value": 0
+                },
+                {
+                  "color": "red",
+                  "value": 80
+                }
+              ]
+            }
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 9,
+          "w": 4,
+          "x": 20,
+          "y": 13
+        },
+        "id": 14,
+        "options": {
+          "legend": {
+            "calcs": [],
+            "displayMode": "list",
+            "placement": "bottom",
+            "showLegend": true
+          },
+          "tooltip": {
+            "hideZeros": false,
+            "mode": "single",
+            "sort": "none"
+          }
+        },
+        "pluginVersion": "12.3.0",
+        "targets": [
+          {
+            "application": {
+              "filter": ""
+            },
+            "countTriggersBy": "",
+            "evaltype": "0",
+            "functions": [],
+            "group": {
+              "filter": "Routers"
+            },
+            "host": {
+              "filter": "Router Claro"
+            },
+            "item": {
+              "filter": "SpeedTest Upload"
+            },
+            "itemTag": {
+              "filter": ""
+            },
+            "macro": {
+              "filter": ""
+            },
+            "options": {
+              "count": false,
+              "disableDataAlignment": false,
+              "showDisabledItems": false,
+              "skipEmptyValues": false,
+              "useTrends": "default",
+              "useZabbixValueMapping": false
+            },
+            "proxy": {
+              "filter": ""
+            },
+            "queryType": "0",
+            "refId": "A",
+            "resultFormat": "time_series",
+            "schema": 12,
+            "table": {
+              "skipEmptyValues": false
+            },
+            "tags": {
+              "filter": ""
+            },
+            "textFilter": "",
+            "trigger": {
+              "filter": ""
+            }
+          }
+        ],
+        "title": "Upload",
         "type": "timeseries"
       }
     ],

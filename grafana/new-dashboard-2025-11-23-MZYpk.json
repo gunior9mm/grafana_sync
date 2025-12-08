@@ -77,7 +77,7 @@
           "overrides": []
         },
         "gridPos": {
-          "h": 4,
+          "h": 3,
           "w": 6,
           "x": 0,
           "y": 0
@@ -209,7 +209,7 @@
           "overrides": []
         },
         "gridPos": {
-          "h": 4,
+          "h": 3,
           "w": 6,
           "x": 6,
           "y": 0
@@ -341,7 +341,7 @@
           "overrides": []
         },
         "gridPos": {
-          "h": 4,
+          "h": 3,
           "w": 6,
           "x": 12,
           "y": 0
@@ -473,7 +473,7 @@
           "overrides": []
         },
         "gridPos": {
-          "h": 4,
+          "h": 3,
           "w": 6,
           "x": 18,
           "y": 0
@@ -616,10 +616,10 @@
           "overrides": []
         },
         "gridPos": {
-          "h": 9,
+          "h": 8,
           "w": 6,
           "x": 0,
-          "y": 4
+          "y": 3
         },
         "id": 4,
         "options": {
@@ -751,10 +751,10 @@
           "overrides": []
         },
         "gridPos": {
-          "h": 9,
+          "h": 8,
           "w": 6,
           "x": 6,
-          "y": 4
+          "y": 3
         },
         "id": 6,
         "options": {
@@ -886,10 +886,10 @@
           "overrides": []
         },
         "gridPos": {
-          "h": 9,
+          "h": 8,
           "w": 6,
           "x": 12,
-          "y": 4
+          "y": 3
         },
         "id": 7,
         "options": {
@@ -1021,10 +1021,10 @@
           "overrides": []
         },
         "gridPos": {
-          "h": 9,
+          "h": 8,
           "w": 6,
           "x": 18,
-          "y": 4
+          "y": 3
         },
         "id": 8,
         "options": {
@@ -1156,10 +1156,10 @@
           "overrides": []
         },
         "gridPos": {
-          "h": 9,
+          "h": 8,
           "w": 6,
           "x": 0,
-          "y": 13
+          "y": 11
         },
         "id": 9,
         "options": {
@@ -1291,10 +1291,10 @@
           "overrides": []
         },
         "gridPos": {
-          "h": 9,
+          "h": 8,
           "w": 6,
           "x": 6,
-          "y": 13
+          "y": 11
         },
         "id": 10,
         "options": {
@@ -1426,10 +1426,10 @@
           "overrides": []
         },
         "gridPos": {
-          "h": 9,
+          "h": 8,
           "w": 6,
           "x": 12,
-          "y": 13
+          "y": 11
         },
         "id": 11,
         "options": {
@@ -1561,10 +1561,10 @@
           "overrides": []
         },
         "gridPos": {
-          "h": 9,
+          "h": 8,
           "w": 6,
           "x": 18,
-          "y": 13
+          "y": 11
         },
         "id": 12,
         "options": {
@@ -1636,6 +1636,7 @@
       }
     ],
     "preload": false,
+    "refresh": "1m",
     "schemaVersion": 42,
     "tags": [],
     "templating": {

@@ -30,7 +30,20 @@
     "editable": true,
     "fiscalYearStartMonth": 0,
     "graphTooltip": 1,
-    "links": [],
+    "links": [
+      {
+        "asDropdown": false,
+        "icon": "external link",
+        "includeVars": false,
+        "keepTime": false,
+        "tags": [],
+        "targetBlank": true,
+        "title": "Source (GitHub)",
+        "tooltip": "View source file in repository",
+        "type": "link",
+        "url": "https://github.com/gunior9mm/grafana_sync/blob/master/grafana/postgresql-cluster-monitoramento.json"
+      }
+    ],
     "panels": [
       {
         "datasource": {
@@ -81,7 +94,7 @@
           "textMode": "auto",
           "wideLayout": true
         },
-        "pluginVersion": "12.1.0",
+        "pluginVersion": "12.4.2",
         "targets": [
           {
             "application": {
@@ -207,7 +220,7 @@
           "textMode": "auto",
           "wideLayout": true
         },
-        "pluginVersion": "12.1.0",
+        "pluginVersion": "12.4.2",
         "targets": [
           {
             "application": {
@@ -333,7 +346,7 @@
           "textMode": "auto",
           "wideLayout": true
         },
-        "pluginVersion": "12.1.0",
+        "pluginVersion": "12.4.2",
         "targets": [
           {
             "application": {
@@ -483,7 +496,7 @@
           "textMode": "auto",
           "wideLayout": true
         },
-        "pluginVersion": "12.1.0",
+        "pluginVersion": "12.4.2",
         "targets": [
           {
             "application": {
@@ -601,7 +614,7 @@
           "textMode": "auto",
           "wideLayout": true
         },
-        "pluginVersion": "12.1.0",
+        "pluginVersion": "12.4.2",
         "targets": [
           {
             "application": {
@@ -762,7 +775,7 @@
             "sort": "none"
           }
         },
-        "pluginVersion": "12.2.0",
+        "pluginVersion": "12.4.2",
         "targets": [
           {
             "application": {
@@ -927,7 +940,7 @@
             "sort": "none"
           }
         },
-        "pluginVersion": "12.2.0",
+        "pluginVersion": "12.4.2",
         "targets": [
           {
             "application": {
@@ -1091,7 +1104,7 @@
             "sort": "none"
           }
         },
-        "pluginVersion": "12.2.0",
+        "pluginVersion": "12.4.2",
         "targets": [
           {
             "application": {
@@ -1254,7 +1267,7 @@
             "sort": "none"
           }
         },
-        "pluginVersion": "12.2.0",
+        "pluginVersion": "12.4.2",
         "targets": [
           {
             "application": {
@@ -1417,7 +1430,7 @@
             "sort": "none"
           }
         },
-        "pluginVersion": "12.2.0",
+        "pluginVersion": "12.4.2",
         "targets": [
           {
             "application": {
@@ -2579,7 +2592,6 @@
           "type": "alexanderzobnin-zabbix-datasource",
           "uid": "eepnfj3d6hrlsb"
         },
-        "description": "",
         "fieldConfig": {
           "defaults": {
             "color": {
@@ -2724,7 +2736,6 @@
           "type": "alexanderzobnin-zabbix-datasource",
           "uid": "eepnfj3d6hrlsb"
         },
-        "description": "",
         "fieldConfig": {
           "defaults": {
             "color": {
@@ -2873,7 +2884,6 @@
             "group": {
               "filter": "Linux servers"
             },
-            "hide": false,
             "host": {
               "filter": "$host"
             },
@@ -2925,7 +2935,6 @@
           "type": "alexanderzobnin-zabbix-datasource",
           "uid": "eepnfj3d6hrlsb"
         },
-        "description": "",
         "fieldConfig": {
           "defaults": {
             "color": {
@@ -3075,7 +3084,6 @@
             "group": {
               "filter": "Linux servers"
             },
-            "hide": false,
             "host": {
               "filter": "$host"
             },
@@ -3127,7 +3135,6 @@
           "type": "alexanderzobnin-zabbix-datasource",
           "uid": "eepnfj3d6hrlsb"
         },
-        "description": "",
         "fieldConfig": {
           "defaults": {
             "color": {
@@ -3286,7 +3293,6 @@
           "type": "alexanderzobnin-zabbix-datasource",
           "uid": "eepnfj3d6hrlsb"
         },
-        "description": "",
         "fieldConfig": {
           "defaults": {
             "color": {
@@ -3438,7 +3444,6 @@
             "group": {
               "filter": "Linux servers"
             },
-            "hide": false,
             "host": {
               "filter": "$host"
             },
@@ -3630,7 +3635,6 @@
             "group": {
               "filter": "Linux servers"
             },
-            "hide": false,
             "host": {
               "filter": "$host"
             },
@@ -3701,6 +3705,7 @@
           },
           "refresh": 1,
           "regex": "/dtb[1-2].*/",
+          "regexApplyTo": "value",
           "type": "query"
         },
         {
@@ -3727,6 +3732,7 @@
           },
           "refresh": 1,
           "regex": "/DB (.+): Database size/",
+          "regexApplyTo": "value",
           "type": "query"
         }
       ]
@@ -3736,7 +3742,8 @@
       "to": "now"
     },
     "timepicker": {},
-    "timezone": "",
-    "title": "Postgresql Cluster Monitoramento"
+    "timezone": "browser",
+    "title": "Postgresql Cluster Monitoramento",
+    "weekStart": ""
   }
 }

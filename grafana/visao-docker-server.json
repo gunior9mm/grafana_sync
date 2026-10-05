@@ -1644,7 +1644,7 @@
                       "mode": "none"
                     },
                     "thresholdsStyle": {
-                      "mode": "off"
+                      "mode": "dashed"
                     }
                   },
                   "thresholds": {
@@ -1655,14 +1655,32 @@
                         "value": 0
                       },
                       {
-                        "color": "red",
-                        "value": 80
+                        "color": "dark-red",
+                        "value": -100
+                      },
+                      {
+                        "color": "dark-red",
+                        "value": 100
                       }
                     ]
                   },
                   "unit": "ms"
                 },
-                "overrides": []
+                "overrides": [
+                  {
+                    "matcher": {
+                      "id": "byRegexp",
+                      "options": "/.*w_await.*/",
+                      "scope": "series"
+                    },
+                    "properties": [
+                      {
+                        "id": "custom.transform",
+                        "value": "negative-Y"
+                      }
+                    ]
+                  }
+                ]
               },
               "options": {
                 "legend": {

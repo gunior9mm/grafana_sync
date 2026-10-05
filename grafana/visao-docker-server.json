@@ -1487,7 +1487,7 @@
                           "filter": "/app(1|2)docker001p/"
                         },
                         "item": {
-                          "filter": "sda: Disk read rate"
+                          "filter": "sda: Disk read request avg waiting time (r_await)"
                         },
                         "itemTag": {
                           "filter": ""
@@ -1553,7 +1553,7 @@
                           "filter": "/app(1|2)docker001p/"
                         },
                         "item": {
-                          "filter": "sda: Disk write rate"
+                          "filter": "sda: Disk write request avg waiting time (w_await)"
                         },
                         "itemTag": {
                           "filter": ""
@@ -1660,7 +1660,7 @@
                       }
                     ]
                   },
-                  "unit": "rps"
+                  "unit": "ms"
                 },
                 "overrides": []
               },
